@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Stardust D.L., Computer Science, App, Blog" />
+  <meta name="keywords" content="CS," />
 
 
 
@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="版本 1.3 引入了 Lambda 表达式 示例：(x,y,z)=&amp;gt;(x+y+z) 可以使用 Lambda 表达式 表示函数，如果配合 func 则能定义极为复杂的函数   我们使用 Lambda 表达式 重写了 求导和积分 的表达方式，现在的表达更加自然 diff((x)=&amp;gt;x^2)   通过 Lambda 表达式 ，现在的函数定义和调用也有所调整。详情请见说明文档 引入了 fore">
+<meta name="description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
+<meta name="keywords" content="CS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iExpr 更新介绍">
-<meta property="og:url" content="http://stardustdl.github.io/Blog/2017/12/22/iExpr-更新介绍/index.html">
+<meta property="og:title" content="线性筛法及扩展">
+<meta property="og:url" content="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/index.html">
 <meta property="og:site_name" content="Liang&#39;s Blog">
-<meta property="og:description" content="版本 1.3 引入了 Lambda 表达式 示例：(x,y,z)=&amp;gt;(x+y+z) 可以使用 Lambda 表达式 表示函数，如果配合 func 则能定义极为复杂的函数   我们使用 Lambda 表达式 重写了 求导和积分 的表达方式，现在的表达更加自然 diff((x)=&amp;gt;x^2)   通过 Lambda 表达式 ，现在的函数定义和调用也有所调整。详情请见说明文档 引入了 fore">
+<meta property="og:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-23T11:41:25.259Z">
+<meta property="og:updated_time" content="2017-12-23T13:26:49.910Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iExpr 更新介绍">
-<meta name="twitter:description" content="版本 1.3 引入了 Lambda 表达式 示例：(x,y,z)=&amp;gt;(x+y+z) 可以使用 Lambda 表达式 表示函数，如果配合 func 则能定义极为复杂的函数   我们使用 Lambda 表达式 重写了 求导和积分 的表达方式，现在的表达更加自然 diff((x)=&amp;gt;x^2)   通过 Lambda 表达式 ，现在的函数定义和调用也有所调整。详情请见说明文档 引入了 fore">
+<meta name="twitter:title" content="线性筛法及扩展">
+<meta name="twitter:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
 
 
 
@@ -128,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://stardustdl.github.io/Blog/2017/12/22/iExpr-更新介绍/"/>
+  <link rel="canonical" href="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/"/>
 
 
 
@@ -154,7 +155,7 @@
   </script>
 
 
-  <title>iExpr 更新介绍 | Liang's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>线性筛法及扩展 | Liang's Blog</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -325,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://stardustdl.github.io/Blog/Blog/2017/12/22/iExpr-更新介绍/">
+    <link itemprop="mainEntityOfPage" href="http://stardustdl.github.io/Blog/Blog/2017/12/23/线性筛法及扩展/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Stardust D.L.">
@@ -342,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">iExpr 更新介绍</h1>
+          <h1 class="post-title" itemprop="name headline">线性筛法及扩展</h1>
         
 
         <div class="post-meta">
@@ -354,8 +355,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T14:06:25+08:00">
-                2017-12-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T20:32:06+08:00">
+                2017-12-23
               </time>
             
 
@@ -370,7 +371,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-23T19:41:25+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-23T21:26:49+08:00">
                 2017-12-23
               </time>
             
@@ -389,8 +390,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Blog/categories/Designs/" itemprop="url" rel="index">
-                    <span itemprop="name">Designs</span>
+                  <a href="/Blog/categories/Studies/" itemprop="url" rel="index">
+                    <span itemprop="name">Studies</span>
                   </a>
                 </span>
 
@@ -420,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  114
+                  1,497
                 </span>
               
 
@@ -436,7 +437,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  7
                 </span>
               
             </div>
@@ -457,19 +458,75 @@
       
 
       
-        <h1 id="版本-1-3"><a href="#版本-1-3" class="headerlink" title="版本 1.3"></a>版本 1.3</h1><ul>
-<li>引入了 Lambda 表达式<ul>
-<li>示例：<code>(x,y,z)=&gt;(x+y+z)</code></li>
-<li>可以使用 Lambda 表达式 表示函数，如果配合 <code>func</code> 则能定义极为复杂的函数</li>
+        <p>以下代码中的定义：</p>
+<ul>
+<li>mindiv[i]: i的最小质因子</li>
+<li>phi[i]: 欧拉函数i的值</li>
+<li>mindivq[i]: i的最小质因子的个数</li>
+<li>d[i]: i的约数个数</li>
+<li>sumd[i]: i的约数和</li>
+<li>miu[i]: 莫比乌斯函数i的值</li>
+<li>inv[i]: i在mod n意义下的乘法逆元</li>
 </ul>
-</li>
-<li>我们使用 Lambda 表达式 重写了 求导和积分 的表达方式，现在的表达更加自然<ul>
-<li><code>diff((x)=&gt;x^2)</code></li>
-</ul>
-</li>
-<li>通过 Lambda 表达式 ，现在的函数定义和调用也有所调整。详情请见说明文档</li>
-<li>引入了 <code>foreach</code></li>
-</ul>
+<hr>
+<h3 id="标准筛法"><a href="#标准筛法" class="headerlink" title="标准筛法"></a>标准筛法</h3><p>欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)<br>两种等价实现<br>易于理解版：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>又短又快版（避免了取模运算）：<strong>（待更新）</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)<span class="keyword">break</span>;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="扩展：求积性函数"><a href="#扩展：求积性函数" class="headerlink" title="扩展：求积性函数"></a>扩展：求积性函数</h3><p>积性函数定义：对于一个数论函数 $f(x)$，满足：若 $gcd(a,b)=1$ ，则 $f(a<em>b)=f(a)</em>f(b)$ 的函数 $f$ 。<br>由于这个性质，我们可以在筛法的同时求出积性函数的值<br>先看几个简单的积性函数：</p>
+<h4 id="id函数"><a href="#id函数" class="headerlink" title="id函数"></a>id函数</h4><p>定义 $id(i)=i$ ，显然满足积性。<br>这就不用筛了，直接得到值</p>
+<h4 id="e函数"><a href="#e函数" class="headerlink" title="e函数"></a>e函数</h4><p>又称单位函数，定义</p>
+<script type="math/tex; mode=display">
+e(n)=\begin{cases}
+1, & \text{if $ n=1 $}\\
+0, & \text{otherwise}
+\end{cases}</script><h4 id="phi函数"><a href="#phi函数" class="headerlink" title="phi函数"></a>phi函数</h4><p>欧拉函数，很有用，可以用来求逆元。<br>定义 </p>
+<script type="math/tex; mode=display">\phi(i)=\sum_{j=1}^ie(gcd(j,i))</script><p>即 $[1,n]$ 中，与 $n$ 互质的数的数量<br>易得对于质数，$phi(p)=p-1$，<br>对于合数有以下公式：</p>
+<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><script type="math/tex; mode=display">\phi(n)=n*(1-1/p_1)*(1-1/p_2)*...</script><p>将n带入可得</p>
+<script type="math/tex; mode=display">phi(n)=\prod_{i=1}^r(p_i-1)*p_i^{q_i-1}</script><p>这就很容易发现它的积性性质<br>用筛法怎么求呢？<br>稍微改一下就行了：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			phi[i]=i<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				phi[k]=phi[i]*pris[j];</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			phi[k]=phi[i]*(pris[j]<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>为什么呢？</p>
+<ol>
+<li>对于 <code>i%pris[j]!=0</code> 的项，它的最小质因子一定是 <code>pris[j]</code> ，则由积性函数性质可得 <code>phi[k]=phi[i]*phi[pris[j]]</code> ，其中<code>phi[pris[j]]=pris[j]-1</code></li>
+<li>对于 <code>i%pris[j]==0</code> 的项，则说明 <code>pris[j]</code> 已经在 <code>i</code> 中已经出现了，而且是最小的，观察 $\phi$ 函数的计算式，可知此时应乘 <code>pris[j]</code></li>
+</ol>
+<h4 id="最小质因数的指数"><a href="#最小质因数的指数" class="headerlink" title="最小质因数的指数"></a>最小质因数的指数</h4><p>这个就很简单了：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			mindivq[i]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				mindivq[k]=mindivq[i]+<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mindivq[k]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="约数个数"><a href="#约数个数" class="headerlink" title="约数个数"></a>约数个数</h4><p>首先约数个数如何求？</p>
+<p>分解质因数，得到</p>
+<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><p>则其 约数个数</p>
+<script type="math/tex; mode=display">=\prod_{i=1}^r(qi+1)</script><p>这个结论由乘法原理易得，每个质因子有 $qi+1$ 种选法。<br>积性就不证了，比较显然。</p>
+<p>怎么求呢？</p>
+<p>观察筛法的过程， <code>i</code> 是质数时或 <code>i%pris[j]!=0</code> 时都比较容易，主要是 <code>i%pris[j]==0</code> 时需要考虑好。</p>
+<p>下面来分析一下：</p>
+<p>关键在于如何由 <code>d(i)</code> 转移到 <code>d(i*pris[j])</code><br>首先筛法保证了 <code>pris[j]</code> 一定是最小质因子，那么由于 <code>i%pris[j]==0</code> ，则意味着最小质因子的指数会 $+1$，这一点在上面的 <code>mindivq</code> 求解过程中也体现了。</p>
+<p>$+1$ 会导致什么？</p>
+<p>很自然会想到 </p>
+<script type="math/tex; mode=display">d(k)=d(i)*\frac{(mindivq[k]=mindivq[i]+1)+1}{mindivq[i]+1}</script><p>就是这样。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			mindivq[i]=<span class="number">1</span>;</span><br><span class="line">			d[i]=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				mindivq[k]=mindivq[i]+<span class="number">1</span>;</span><br><span class="line">				d[k]=d[i]/(mindivq[i]+<span class="number">1</span>)*(mindivq[k]+<span class="number">1</span>);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mindivq[k]=<span class="number">1</span>;</span><br><span class="line">			d[k]=d[i]*d[pris[j]];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="约数和"><a href="#约数和" class="headerlink" title="约数和"></a>约数和</h4><p>约数和又如何求？<br>分解质因数，得到</p>
+<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><p>则其 约数和 </p>
+<script type="math/tex; mode=display">=\prod_{i=1}^r\sum_{j=0}^{q_i} p_i^j</script><p>看起来也是比较显然，我们直接讨论如何利用筛法来求：</p>
+<p>依然是利用和上面的类似思路：<br>只讨论 <code>i%pris[j]==0</code> 的情况：<br>需要除以 $\sum_{n=0}^{mindivq[i]}(pris[j])^n$<br>再乘以 $\sum_{n=0}^{mindivq[k]}(pris[j])^n$<br>其中 $mindivq[k]=mindiv[i]+1$<br>这样开两个辅助数组记录</p>
+<script type="math/tex; mode=display">t1[i]=\sum_{n=0}^{mindivq[i]}pris[j]^n</script><script type="math/tex; mode=display">t2[i]=(mindiv[i])^{mindivq[i]}</script><p>就可以做了：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			sumd[i]=<span class="number">1</span>+i;</span><br><span class="line">			t1[i]=<span class="number">1</span>+i;</span><br><span class="line">			t2[i]=i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				t2[k]=t2[i]*pris[j];</span><br><span class="line">				t1[k]=t1[i]+t2[k];</span><br><span class="line">				sumd[k]=sumd[i]/t1[i]*t1[k];</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			sumd[k]=sumd[i]*sumd[pris[j]];</span><br><span class="line">			t1[k]=<span class="number">1</span>+pris[j];</span><br><span class="line">			t2[k]=pris[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="miu函数"><a href="#miu函数" class="headerlink" title="miu函数"></a>miu函数</h3><p>莫比乌斯函数，定义 </p>
+<script type="math/tex; mode=display">
+\mu(n)=\begin{cases}
+1, & \text{if $ n=1 $}\\
+0, & \text{if $n$ is square free number}\\
+(-1)^{\text{质因数个数}}& \text{otherwise}
+\end{cases}</script><p>用筛法求也很简单：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			miu[i]=<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				miu[k]=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			miu[k]=-miu[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h4><p>由求逆元的欧拉定理方法易知乘法逆元也是积性的，而且有一个很优美的性质：它是完全积性的。</p>
+<p>所以求它变得很简单：</p>
+<script type="math/tex; mode=display">inv[p]=p^{phi(n)-1}\mod n</script><script type="math/tex; mode=display">inv[k]=inv[i]*inv[pris[j]] \quad\text{if } gcd(k,n)=1</script><p>然而乘法逆元有一个递推的方法，更加简单：</p>
+<p>首先逆元满足以下等式（定义）：</p>
+<script type="math/tex; mode=display">inv[P\text{ mod }i]*(P\text{ mod }i)=1</script><p>将P % i展开：</p>
+<script type="math/tex; mode=display">inv[P\text{ mod }i]*(P-\lfloor P/i \rfloor *i)=1</script><p>进一步展开：</p>
+<script type="math/tex; mode=display">inv[P\text{ mod }i]*i*(-\lfloor P/i \rfloor)=1</script><p>会发现一个神奇的等式：</p>
+<script type="math/tex; mode=display">i*(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])=1</script><p>此时 $(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])$ 就是 $i$ 的逆元！</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>线性欧拉筛法简洁，积性函数性质优美，充分结合才能发挥更大的效果。同时又要注意到不同函数的性质，用筛法求积性函数的本质是根据积性函数的定义和运算式，利用筛法的特点，构造合适的转移方法。</p>
 
       
     </div>
@@ -486,12 +543,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/Blog/2017/12/22/iExpr-更新介绍/">iExpr 更新介绍</a></p>
+  <p><span>本文标题:</span><a href="/Blog/2017/12/23/线性筛法及扩展/">线性筛法及扩展</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Stardust D.L. 的个人博客">Stardust D.L.</a></p>
-  <p><span>发布时间:</span>2017年12月22日 - 14:12</p>
-  <p><span>最后更新:</span>2017年12月23日 - 19:12</p>
-  <p><span>原始链接:</span><a href="/Blog/2017/12/22/iExpr-更新介绍/" title="iExpr 更新介绍">http://stardustdl.github.io/Blog/2017/12/22/iExpr-更新介绍/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/22/iExpr-更新介绍/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2017年12月23日 - 20:12</p>
+  <p><span>最后更新:</span>2017年12月23日 - 21:12</p>
+  <p><span>原始链接:</span><a href="/Blog/2017/12/23/线性筛法及扩展/" title="线性筛法及扩展">http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -534,6 +591,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/Blog/tags/CS/" rel="tag"> <i class="fa fa-tag"></i> CS</a>
+          
+        </div>
+      
 
       
       
@@ -543,8 +606,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Blog/2017/12/22/表达式计算器-iExpr/" rel="next" title="表达式计算器-iExpr">
-                <i class="fa fa-chevron-left"></i> 表达式计算器-iExpr
+              <a href="/Blog/2017/12/22/码题助手/" rel="next" title="码题助手">
+                <i class="fa fa-chevron-left"></i> 码题助手
               </a>
             
           </div>
@@ -552,10 +615,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Blog/2017/12/22/iExpr-Examples/" rel="prev" title="iExpr 编程示例与常用运行时函数">
-                iExpr 编程示例与常用运行时函数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -739,7 +798,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#版本-1-3"><span class="nav-number">1.</span> <span class="nav-text">版本 1.3</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#标准筛法"><span class="nav-number">1.</span> <span class="nav-text">标准筛法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展：求积性函数"><span class="nav-number">2.</span> <span class="nav-text">扩展：求积性函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#id函数"><span class="nav-number">2.1.</span> <span class="nav-text">id函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#e函数"><span class="nav-number">2.2.</span> <span class="nav-text">e函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#phi函数"><span class="nav-number">2.3.</span> <span class="nav-text">phi函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最小质因数的指数"><span class="nav-number">2.4.</span> <span class="nav-text">最小质因数的指数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约数个数"><span class="nav-number">2.5.</span> <span class="nav-text">约数个数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约数和"><span class="nav-number">2.6.</span> <span class="nav-text">约数和</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#miu函数"><span class="nav-number">3.</span> <span class="nav-text">miu函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#乘法逆元"><span class="nav-number">3.1.</span> <span class="nav-text">乘法逆元</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
