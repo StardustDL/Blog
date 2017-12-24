@@ -6,7 +6,7 @@
   <link href="/Blog/atom.xml" rel="self"/>
   
   <link href="http://stardustdl.github.io/Blog/"/>
-  <updated>2017-12-23T13:26:49.910Z</updated>
+  <updated>2017-12-24T12:53:44.551Z</updated>
   <id>http://stardustdl.github.io/Blog/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>牛顿迭代法</title>
+    <link href="http://stardustdl.github.io/Blog/2017/12/24/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/"/>
+    <id>http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/</id>
+    <published>2017-12-24T12:35:05.000Z</published>
+    <updated>2017-12-24T12:53:44.551Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>伽罗瓦云：五次及以上多项式方程没有根式解。但面对生活中求解各种复杂方程的真实需求，是否束手无策？非也，今用牛顿迭代法高效求解方程的近似根。本文介绍了牛顿迭代法的推导和其计算机实现，并使用牛顿迭代法实现了开方等运算。</p></blockquote><h1 id="牛顿迭代法"><a href="#牛顿迭代法" class="headerlink" title="牛顿迭代法"></a>牛顿迭代法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>我们已知：微分是曲线的线性逼近。<br>对于二阶连续可导函数 $y=f(x)$ ，设 $r$是 $f(x)=0$ 的根。对曲线上的任意一点 $A(x_0,y_0)$<br>，作微分 $y’=f’(x) \text{d}x$, 交 $x$ 轴于一点 $(x_1,0)$ ，如下图所示，称 $x_1$ 为 $r$ 的一次近似值。</p><p><img src="http://osyor26xu.bkt.clouddn.com/math2.png" alt=""></p><p>注意到$x_1$与函数的零点仍有一段距离，<br>过 $x_1$ 作 $x$ 轴垂线，<br>交 $y=f(x)$ 于$B(x_1,y_1)$ ，<br>继续作微分 $y’=f’(x_1)\text{d}x$ ，<br>交 $x$ 轴于 $(x_2,0)$ ，<br>称 $x_2$ 为 $r$ 的二次近似值。<br>如下图，此时 $x_2$ 与 $r$ 更加接近。</p><p><img src="http://osyor26xu.bkt.clouddn.com/math3.png" alt=""></p><p>重复上述过程，经过50次迭代，得下图. 此时第50次近似值已经十分接近 $r$ 。</p><p><img src="http://osyor26xu.bkt.clouddn.com/math4.png" alt=""></p><p><strong>定义</strong>：<br>设二阶连续可导函数 $y=f(x)$，$r$ 是 $f(x)=0$ 的根，选取 $x_0$ 作为 $r$ 的初始近似值，过点 $(x_0,f(x_0))$ 做曲线 $y=f(x)$ 的微分 $L$, 求出 $L$ 与 $x$ 轴交点的横坐标 $x_1=x_0-\frac{f(x_0)}{f’(x_0)}$，称 $x_1$ 为 $r$ 的一次近似值。过点$(x_1,f(x_1))$ 做曲线 $y=f(x)$ 的切线，并求该切线与x轴交点的横坐标 $x_2=x_1-\frac{f(x_1)}{f’(x_1)}$，称 $x_2$ 为 $r$ 的二次近似值。重复以上过程，得 $r$ 的近似值序列，其中 $x_{n+1}=x_n-\frac{f(x_n)}{f’(x_n)}$ ，称为 $r$ 的 $n+1$ 次近似值，上式称为 <strong>牛顿迭代序列</strong>。</p><h2 id="收敛条件"><a href="#收敛条件" class="headerlink" title="收敛条件"></a>收敛条件</h2><p>关于牛顿法的局部收敛性，我们有如下定理：</p><p><strong>定理</strong>：设 $x^*$ 是方程 $f(x)=0$ 的根，$f$ 在某个包含 $x^*$ 为内点的区间内足够光滑，且 $f’(x) \ne 0$。那么存在 $x^*$ 的一个邻域 $N(x^*)=[x^*-\delta,x^*+\delta]$，使得对于任意 $x_0 \in N(x^*)$，牛顿法产生的迭代序列以不低于二阶的收敛速度收敛于解 $x^*$。</p><p><strong>证明</strong>：<br>牛顿法是对应于函数 $\phi(x)=x-\frac{f(x)}{f’(x)}$ 的不动点迭代。我们有</p><script type="math/tex; mode=display">\phi'(x)=\frac{f(x)f''(x)}{[f'(x)]^2}</script><p>若 $f’(x)\ne 0$，则有 $\phi’(x^*)=0$。因此，牛顿迭代法是局部收敛的。</p><p>和不动点收敛类似，对于牛顿法迭代，我们有</p><script type="math/tex; mode=display">x_{k+1}-x^*=\phi(x_k)-\phi(x^*)=\phi(x^*)+\phi'(x^*)(x_k-x^*)+\frac{\phi''(\xi_k)}{2}(x_k-x^*)^2-\phi(x^*)</script><script type="math/tex; mode=display">=\frac{\phi''(\xi_k)}{2}(x_k-x^*)^2</script><p>式中，$\xi_k$ 位于 $x_k$ 和 $x^*$ 之间。因此</p><script type="math/tex; mode=display">\lim_{k\rightarrow +\infty} \frac{|x_{k+1}-x^*|}{|x_k-x^*|^2}=\lim_{k \rightarrow + \infty} \frac{|\phi''(\xi_k)|}{2}= \frac{|\phi''(x^*)|}{2}</script><h1 id="计算机实现"><a href="#计算机实现" class="headerlink" title="计算机实现"></a>计算机实现</h1><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>首先我们的目标是近似求解函数的根。<br>由于牛顿迭代法迭代过程只限于一阶导数，<br>我们可以使用差分的方式来近似计算某点导数值：</p><script type="math/tex; mode=display">f'(x)=\frac{f(x+eps)-f(x)}{eps}</script><p>其中的 $eps$ 取决于我们对最终解精度的要求。</p><p>进而，我们由上一节中牛顿迭代公式有：</p><script type="math/tex; mode=display">x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}</script><p>注意到 $\lim_{n \rightarrow +\infty} f(x_n)=0$ ，<br>迭代最终收敛，则当我们迭代到 $|f(x_n)|&lt;eps$ 时就可以退出迭代，<br>此时的 $x_n$ 即为近似解。</p><p><strong>注</strong>：在由于计算机内部对实数的存储是有误差的，所以对于 $\epsilon$ 的选取应格外小心。</p><h2 id="Python-实现"><a href="#Python-实现" class="headerlink" title="Python 实现"></a>Python 实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">diff</span><span class="params">(f,x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> (f(x+eps)-f(x))/eps</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getZero</span><span class="params">(f,x0)</span>:</span></span><br><span class="line">    n=<span class="number">0</span></span><br><span class="line">    s=x0</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        s=s-f(s)/diff(f,s)</span><br><span class="line">        n=n+<span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> math.fabs(f(s))&lt;eps:</span><br><span class="line">            <span class="keyword">return</span> (s,n)</span><br></pre></td></tr></table></figure><ul><li>$getZero(f,x_0)$ 函数接受一个函数 $f$ ，和迭代起点 $x_0$</li><li>$\epsilon$ 即 $eps$ 为解的精度</li><li>$n$ 为迭代次数</li><li>$s$ 为最终的解值</li></ul><h2 id="使用计算机求平方根"><a href="#使用计算机求平方根" class="headerlink" title="使用计算机求平方根"></a>使用计算机求平方根</h2><p>我们可以使用上面的代码求解平方根。<br>首先求解平方根即求函数 $f(x)=x^2-a$ 的零点。</p><p>调用以上函数即</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f=<span class="keyword">lambda</span> x: x**<span class="number">2</span>-a</span><br><span class="line">x, n=getZero(f,x0)</span><br><span class="line">print(x,n,f(x))</span><br></pre></td></tr></table></figure><p>我们取 $\epsilon=10^{-15},a=2,x_0=10$ 时，程序输出</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.4142135623730951 18 4.440892098500626e-16</span><br></pre></td></tr></table></figure><p>说明我们得到的近似解为 $\sqrt{2} \approx 1.4142135623730951$ ，迭代了 $18$ 次，<br>此处的 $f(x_n)=4.440892098500626*10^{-16}$，可见 $|f(x_n)|&lt;10^{-15}=\epsilon$，满足精度要求。</p><p>接下来我们使用系统自带的 求平方根函数 求值，其结果为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.4142135623730951</span><br></pre></td></tr></table></figure></p><p>由此可见我们使用牛顿迭代法求得的近似解已与系统提供的求根函数精度相等，能满足一般的需求。</p><h2 id="较复杂函数的零点近似求解"><a href="#较复杂函数的零点近似求解" class="headerlink" title="较复杂函数的零点近似求解"></a>较复杂函数的零点近似求解</h2><p>接下来以一个较复杂函数</p><script type="math/tex; mode=display">f(x)=\cos((2-\sin(x))^{\arctan(x)})</script><p>为例演示函数零点的求解过程。</p><p>此函数在 $x=0$ 附近的图像如下：<br><img src="http://osyor26xu.bkt.clouddn.com/math1.png" alt=""><br>为求出函数在 $x=2$ 附近的零点，<br>我们取 $\epsilon=10^{-10},x_0=2$ ，程序输出<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.567793875101797 5 -1.1263042511219229e-14</span><br></pre></td></tr></table></figure></p><p>则经过 $5$ 次迭代，我们得到近似解 $2.567793875101797$。</p><p>进一步的，我们可以通过其具体迭代过程发现，迭代的步长缩小得很快，这符合之前的预期：</p><script type="math/tex; mode=display">x_0=2</script><script type="math/tex; mode=display">x_1=3.048910600444615</script><script type="math/tex; mode=display">x_2=2.5508408648839507</script><script type="math/tex; mode=display">x_3=2.5679378839996416</script><script type="math/tex; mode=display">x_4=2.567793884737295</script><script type="math/tex; mode=display">x_5=2.567793875101797</script><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>使用牛顿迭代法，我们可以快速近似计算满足收敛条件的函数的零点。<br>这种方法解决了很多非线性方程组的求根问题，简化了许多工程问题的计算。</p><blockquote><p>参考资料：同济大学计算数学教研室《现代数值计算》（人民邮电出版社）</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;伽罗瓦云：五次及以上多项式方程没有根式解。但面对生活中求解各种复杂方程的真实需求，是否束手无策？非也，今用牛顿迭代法高效求解方程的近似根。本文介绍了牛顿迭代法的推导和其计算机实现，并使用牛顿迭代法实现了开方等运算。&lt;/p&gt;
+&lt;/blockquote
+      
+    
+    </summary>
+    
+      <category term="Studies" scheme="http://stardustdl.github.io/Blog/categories/Studies/"/>
+    
+    
+      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+    
+      <category term="Math" scheme="http://stardustdl.github.io/Blog/tags/Math/"/>
+    
+  </entry>
   
   <entry>
     <title>线性筛法及扩展</title>
