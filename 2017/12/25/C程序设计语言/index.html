@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="Liang&#39;s Blog">
 <meta property="og:description" content="书籍名：《C程序设计语言（第二版）》  第二章 枚举 enum id{A=1,B=2,...} 字符串支持连接 &amp;quot;abc&amp;quot; &amp;quot;def&amp;quot;=&amp;quot;abcdef&amp;quot; ctype 中的函数与字符表无关 使用 unsigned 的变量在隐式转换时和具体实现有关要十分注意，可能不是预期的。 float 不会自动提升为 double 伪随机数算法 $[0,">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-25T13:32:31.508Z">
+<meta property="og:updated_time" content="2017-12-26T09:36:55.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C程序设计语言">
 <meta name="twitter:description" content="书籍名：《C程序设计语言（第二版）》  第二章 枚举 enum id{A=1,B=2,...} 字符串支持连接 &amp;quot;abc&amp;quot; &amp;quot;def&amp;quot;=&amp;quot;abcdef&amp;quot; ctype 中的函数与字符表无关 使用 unsigned 的变量在隐式转换时和具体实现有关要十分注意，可能不是预期的。 float 不会自动提升为 double 伪随机数算法 $[0,">
@@ -382,8 +382,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-25T21:32:31+08:00">
-                2017-12-25
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-26T17:36:55+08:00">
+                2017-12-26
               </time>
             
           </span>
@@ -443,7 +443,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,330
+                  1,326
                 </span>
               
 
@@ -508,7 +508,11 @@
 <h3 id="宏定义"><a href="#宏定义" class="headerlink" title="宏定义"></a>宏定义</h3><ul>
 <li>行末使用 <code>\</code> 使用多行定义</li>
 <li><code>undef</code> 取消宏定义</li>
-<li>替换文本中 <code>#</code>加在参数名前，则将会生成和参数书写完全相同的字符串<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> debug(expr) printf(#expr <span class="meta-string">" = %g\n"</span>,expr)</span></span><br><span class="line">``` </span><br><span class="line">+ `##` 运算符</span><br><span class="line">```c</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> paste(a,b) a ## b</span></span><br><span class="line">paste(name,<span class="number">1</span>) =&gt; name1</span><br></pre></td></tr></table></figure>
+<li><p>替换文本中 <code>#</code>加在参数名前，则将会生成和参数书写完全相同的字符串</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> debug(expr) printf(#expr <span class="meta-string">" = %g\n"</span>,expr)</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>##</code> 运算符</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> paste(a,b) a ## b</span></span><br><span class="line">paste(name,<span class="number">1</span>) =&gt; name1</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="条件"><a href="#条件" class="headerlink" title="条件"></a>条件</h3><ul>
@@ -623,7 +627,7 @@
   <p><span>本文标题:</span><a href="/Blog/2017/12/25/C程序设计语言/">C程序设计语言</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Stardust D.L. 的个人博客">Stardust D.L.</a></p>
   <p><span>发布时间:</span>2017年12月25日 - 19:12</p>
-  <p><span>最后更新:</span>2017年12月25日 - 21:12</p>
+  <p><span>最后更新:</span>2017年12月26日 - 17:12</p>
   <p><span>原始链接:</span><a href="/Blog/2017/12/25/C程序设计语言/" title="C程序设计语言">http://stardustdl.github.io/Blog/2017/12/25/C程序设计语言/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/25/C程序设计语言/"  aria-label="复制成功！"></i></span>
   </p>
