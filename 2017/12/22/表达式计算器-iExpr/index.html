@@ -103,7 +103,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20171209235226240?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvRDA0MjQxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171209235238723?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvRDA0MjQxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171214193455398?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvRDA0MjQxMg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-12-23T14:20:15.355Z">
+<meta property="og:updated_time" content="2017-12-28T14:26:13.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="表达式计算器-iExpr">
 <meta name="twitter:description" content="版本更新内容 介绍个人设计的一个表达式计算器，支持以下功能  带关系运算和逻辑运算的数学表达式解析与计算 支持常见数学函数 表达式带变量运算，变量赋值运算 支持简单求导（实现十分简单，所以支持的函数很少，但很多函数可以使用伪求导），定积分求值等运算 简单逻辑表达式的解析与计算 绘制函数图象 打印真值表 使用编程方式进行一些复杂运算  系统要求：Windows 10 秋季创意者更新（16299）">
@@ -388,8 +388,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-23T22:20:15+08:00">
-                2017-12-23
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-28T22:26:13+08:00">
+                2017-12-28
               </time>
             
           </span>
@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,901
+                  2,938
                 </span>
               
 
@@ -630,23 +630,26 @@
 <ul>
 <li><code>sum(expr,l,r)</code> </li>
 </ul>
-<script type="math/tex; mode=display">\sum_l^r{expr}</script><p>变量自l到r（会自动转换为整数）遍历，带入expr求值（expr中应只含有一个变量），然后累加。 </p>
+<p>$$\sum_l^r{expr}$$<br>变量自l到r（会自动转换为整数）遍历，带入expr求值（expr中应只含有一个变量），然后累加。 </p>
 <ul>
 <li><code>prod(expr,l,r)</code> </li>
 </ul>
-<script type="math/tex; mode=display">\prod_l^r{expr}</script><p>变量自l到r遍历（会自动转换为整数），带入expr求值（expr中应只含有一个变量），然后累乘。 </p>
+<p>$$\prod_l^r{expr}$$<br>变量自l到r遍历（会自动转换为整数），带入expr求值（expr中应只含有一个变量），然后累乘。 </p>
 <h4 id="微积分部分"><a href="#微积分部分" class="headerlink" title="微积分部分"></a>微积分部分</h4><ul>
 <li><code>diff((vid)=&gt;(expr))</code></li>
 </ul>
-<script type="math/tex; mode=display">\frac{\mathrm{d}\,expr}{\mathrm{d}\,vid}</script><p>初等函数求导</p>
+<p>$$\frac{\mathrm{d}\,expr}{\mathrm{d}\,vid}$$</p>
+<p>初等函数求导</p>
 <ul>
 <li><code>diffi((vid)=&gt;(expr),x0)</code></li>
 </ul>
-<script type="math/tex; mode=display">\frac{f(x_0+step)-f(x_0)}{step}</script><p>使用差分计算 $x_0$ 处切线斜率。默认 step=0.001</p>
+<p>$$\frac{f(x_0+step)-f(x_0)}{step}$$</p>
+<p>使用差分计算 $x_0$ 处切线斜率。默认 step=0.001</p>
 <ul>
 <li><code>integ((x)=&gt;(expr),l,r)</code></li>
 </ul>
-<script type="math/tex; mode=display">\int_l^r{expr}\,\mathrm{d}\,x</script><p><code>expr</code>（单变量函数，变量名会自动选择）在 $[l,r]$ 上的定积分模拟：精度默认值为 $10^{-6}$</p>
+<p>$$\int_l^r{expr}\,\mathrm{d}\,x$$</p>
+<p><code>expr</code>（单变量函数，变量名会自动选择）在 $[l,r]$ 上的定积分模拟：精度默认值为 $10^{-6}$</p>
 <h4 id="数论部分"><a href="#数论部分" class="headerlink" title="数论部分"></a>数论部分</h4><ul>
 <li><code>gcd(int x,int y)</code></li>
 </ul>
@@ -674,15 +677,18 @@
 <h4 id="集合部分"><a href="#集合部分" class="headerlink" title="集合部分"></a>集合部分</h4><ul>
 <li><code>cup(v1,v2,...)</code></li>
 </ul>
-<script type="math/tex; mode=display">\bigcup v_i</script><p>并集，其中参数必须为集合类型</p>
+<p>$$\bigcup v_i$$</p>
+<p>并集，其中参数必须为集合类型</p>
 <ul>
 <li><code>cap(v1,v2,...)</code></li>
 </ul>
-<script type="math/tex; mode=display">\bigcap v_i</script><p>交集，其中参数必须为集合类型</p>
+<p>$$\bigcap v_i$$</p>
+<p>交集，其中参数必须为集合类型</p>
 <ul>
 <li><code>dif(v1,v2,...)</code></li>
 </ul>
-<script type="math/tex; mode=display">v_1 \setminus v2 \setminus v3 \setminus \dots</script><p>差集（v1-v2-v3-…），其中参数必须为集合类型</p>
+<p>$$v_1 \setminus v2 \setminus v3 \setminus \dots$$</p>
+<p>差集（v1-v2-v3-…），其中参数必须为集合类型</p>
 <h2 id="求值"><a href="#求值" class="headerlink" title="求值"></a>求值</h2><p>在代值页面点击刷新会加载当前表达式所有有意义变量（部分变量可能会在计算中被化简掉），设置变量值后点击计算会在计算结果区显示结果。</p>
 <h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2><p>对于单变量表达式，在图像页面可以绘制其图像。</p>
 <p>可以使用右侧按钮或鼠标滚轮放大缩小。拖动界面可移动绘图区域。</p>
@@ -833,7 +839,7 @@
   <p><span>本文标题:</span><a href="/Blog/2017/12/22/表达式计算器-iExpr/">表达式计算器-iExpr</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Stardust D.L. 的个人博客">Stardust D.L.</a></p>
   <p><span>发布时间:</span>2017年12月22日 - 13:12</p>
-  <p><span>最后更新:</span>2017年12月23日 - 22:12</p>
+  <p><span>最后更新:</span>2017年12月28日 - 22:12</p>
   <p><span>原始链接:</span><a href="/Blog/2017/12/22/表达式计算器-iExpr/" title="表达式计算器-iExpr">http://stardustdl.github.io/Blog/2017/12/22/表达式计算器-iExpr/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/22/表达式计算器-iExpr/"  aria-label="复制成功！"></i></span>
   </p>
@@ -991,7 +997,7 @@
               
                 <a href="/Blog/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1002,7 +1008,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/Blog/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1013,7 +1019,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/Blog/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1147,7 +1153,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共9.1k字</span>
+  <span class="post-count">博客全站共10.5k字</span>
 </div>
 
         
