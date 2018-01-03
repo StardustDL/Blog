@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="Liang&#39;s Blog">
 <meta property="og:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-28T14:26:17.073Z">
+<meta property="og:updated_time" content="2018-01-03T05:52:22.616Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性筛法及扩展">
 <meta name="twitter:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
@@ -382,8 +382,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-28T22:26:17+08:00">
-                2017-12-28
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-03T13:52:22+08:00">
+                2018-01-03
               </time>
             
           </span>
@@ -495,7 +495,7 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>又短又快版（避免了取模运算）：<strong>（待更新）</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)<span class="keyword">break</span>;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="扩展：求积性函数"><a href="#扩展：求积性函数" class="headerlink" title="扩展：求积性函数"></a>扩展：求积性函数</h3><p>积性函数定义：对于一个数论函数 $f(x)$，满足：若 $gcd(a,b)=1$ ，则 $f(a<em>b)=f(a)</em>f(b)$ 的函数 $f$ 。<br>由于这个性质，我们可以在筛法的同时求出积性函数的值<br>先看几个简单的积性函数：</p>
+<h3 id="扩展：求积性函数"><a href="#扩展：求积性函数" class="headerlink" title="扩展：求积性函数"></a>扩展：求积性函数</h3><p>积性函数定义：对于一个数论函数 $f(x)$，满足：若 $gcd(a,b)=1$ ，则 $f(ab)=f(a)f(b)$ 的函数 $f$ 。<br>由于这个性质，我们可以在筛法的同时求出积性函数的值<br>先看几个简单的积性函数：</p>
 <h4 id="id函数"><a href="#id函数" class="headerlink" title="id函数"></a>id函数</h4><p>定义 $id(i)=i$ ，显然满足积性。<br>这就不用筛了，直接得到值</p>
 <h4 id="e函数"><a href="#e函数" class="headerlink" title="e函数"></a>e函数</h4><p>又称单位函数，定义</p>
 <p>$$<br>e(n)=\begin{cases}<br>1, &amp; \text{if $ n=1 $}\<br>0, &amp; \text{otherwise}<br>\end{cases}<br>$$</p>
@@ -572,7 +572,7 @@
   <p><span>本文标题:</span><a href="/Blog/2017/12/23/线性筛法及扩展/">线性筛法及扩展</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Stardust D.L. 的个人博客">Stardust D.L.</a></p>
   <p><span>发布时间:</span>2017年12月23日 - 20:12</p>
-  <p><span>最后更新:</span>2017年12月28日 - 22:12</p>
+  <p><span>最后更新:</span>2018年01月03日 - 13:01</p>
   <p><span>原始链接:</span><a href="/Blog/2017/12/23/线性筛法及扩展/" title="线性筛法及扩展">http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/"  aria-label="复制成功！"></i></span>
   </p>
@@ -730,7 +730,7 @@
               
                 <a href="/Blog/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -752,7 +752,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/Blog/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -855,7 +855,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -886,7 +886,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共10.4k字</span>
+  <span class="post-count">博客全站共11.2k字</span>
 </div>
 
         

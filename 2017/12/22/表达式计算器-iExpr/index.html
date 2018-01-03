@@ -449,7 +449,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,938
+                  2,901
                 </span>
               
 
@@ -630,26 +630,23 @@
 <ul>
 <li><code>sum(expr,l,r)</code> </li>
 </ul>
-<p>$$\sum_l^r{expr}$$<br>变量自l到r（会自动转换为整数）遍历，带入expr求值（expr中应只含有一个变量），然后累加。 </p>
+<script type="math/tex; mode=display">\sum_l^r{expr}</script><p>变量自l到r（会自动转换为整数）遍历，带入expr求值（expr中应只含有一个变量），然后累加。 </p>
 <ul>
 <li><code>prod(expr,l,r)</code> </li>
 </ul>
-<p>$$\prod_l^r{expr}$$<br>变量自l到r遍历（会自动转换为整数），带入expr求值（expr中应只含有一个变量），然后累乘。 </p>
+<script type="math/tex; mode=display">\prod_l^r{expr}</script><p>变量自l到r遍历（会自动转换为整数），带入expr求值（expr中应只含有一个变量），然后累乘。 </p>
 <h4 id="微积分部分"><a href="#微积分部分" class="headerlink" title="微积分部分"></a>微积分部分</h4><ul>
 <li><code>diff((vid)=&gt;(expr))</code></li>
 </ul>
-<p>$$\frac{\mathrm{d}\,expr}{\mathrm{d}\,vid}$$</p>
-<p>初等函数求导</p>
+<script type="math/tex; mode=display">\frac{\mathrm{d}\,expr}{\mathrm{d}\,vid}</script><p>初等函数求导</p>
 <ul>
 <li><code>diffi((vid)=&gt;(expr),x0)</code></li>
 </ul>
-<p>$$\frac{f(x_0+step)-f(x_0)}{step}$$</p>
-<p>使用差分计算 $x_0$ 处切线斜率。默认 step=0.001</p>
+<script type="math/tex; mode=display">\frac{f(x_0+step)-f(x_0)}{step}</script><p>使用差分计算 $x_0$ 处切线斜率。默认 step=0.001</p>
 <ul>
 <li><code>integ((x)=&gt;(expr),l,r)</code></li>
 </ul>
-<p>$$\int_l^r{expr}\,\mathrm{d}\,x$$</p>
-<p><code>expr</code>（单变量函数，变量名会自动选择）在 $[l,r]$ 上的定积分模拟：精度默认值为 $10^{-6}$</p>
+<script type="math/tex; mode=display">\int_l^r{expr}\,\mathrm{d}\,x</script><p><code>expr</code>（单变量函数，变量名会自动选择）在 $[l,r]$ 上的定积分模拟：精度默认值为 $10^{-6}$</p>
 <h4 id="数论部分"><a href="#数论部分" class="headerlink" title="数论部分"></a>数论部分</h4><ul>
 <li><code>gcd(int x,int y)</code></li>
 </ul>
@@ -677,18 +674,15 @@
 <h4 id="集合部分"><a href="#集合部分" class="headerlink" title="集合部分"></a>集合部分</h4><ul>
 <li><code>cup(v1,v2,...)</code></li>
 </ul>
-<p>$$\bigcup v_i$$</p>
-<p>并集，其中参数必须为集合类型</p>
+<script type="math/tex; mode=display">\bigcup v_i</script><p>并集，其中参数必须为集合类型</p>
 <ul>
 <li><code>cap(v1,v2,...)</code></li>
 </ul>
-<p>$$\bigcap v_i$$</p>
-<p>交集，其中参数必须为集合类型</p>
+<script type="math/tex; mode=display">\bigcap v_i</script><p>交集，其中参数必须为集合类型</p>
 <ul>
 <li><code>dif(v1,v2,...)</code></li>
 </ul>
-<p>$$v_1 \setminus v2 \setminus v3 \setminus \dots$$</p>
-<p>差集（v1-v2-v3-…），其中参数必须为集合类型</p>
+<script type="math/tex; mode=display">v_1 \setminus v2 \setminus v3 \setminus \dots</script><p>差集（v1-v2-v3-…），其中参数必须为集合类型</p>
 <h2 id="求值"><a href="#求值" class="headerlink" title="求值"></a>求值</h2><p>在代值页面点击刷新会加载当前表达式所有有意义变量（部分变量可能会在计算中被化简掉），设置变量值后点击计算会在计算结果区显示结果。</p>
 <h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2><p>对于单变量表达式，在图像页面可以绘制其图像。</p>
 <p>可以使用右侧按钮或鼠标滚轮放大缩小。拖动界面可移动绘图区域。</p>
@@ -997,7 +991,7 @@
               
                 <a href="/Blog/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1019,7 +1013,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/Blog/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1122,7 +1116,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1153,7 +1147,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共10.4k字</span>
+  <span class="post-count">博客全站共11.2k字</span>
 </div>
 
         
