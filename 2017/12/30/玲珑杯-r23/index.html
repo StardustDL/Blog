@@ -113,7 +113,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     fastclick: true,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
@@ -310,22 +310,26 @@
   
     <div class="site-search">
       
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
   </div>
-  <div id="local-search-result"></div>
-</div>
+
 
 
 
@@ -433,6 +437,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Blog/2017/12/30/玲珑杯-r23/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Blog/2017/12/30/玲珑杯-r23/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -485,25 +499,21 @@
 <p>给定一个正整数n，现在有n个石头，每个单独成一堆。<br>现在可以每次合并两堆石头，产生的能量为两堆石头个数的min。<br>你现在要将所有的石头合并成一堆，并且获得的能量最大。<br>输出这个最大值。<br>$1\leq n \leq 10^7$</p>
 </blockquote>
 <p>最后一次尽量平均即可。复杂度 $O(\log_2 n)$</p>
-<script type="math/tex; mode=display">
-S(n)=\begin{cases}
-0, & \text{if $ n<=1 $}\\
-\lfloor n/2 \rfloor + 2S(\lfloor n/2 \rfloor), & \text{n is even}\\
-\lfloor n/2 \rfloor + S(\lfloor n/2 \rfloor)+S(n-\lfloor n/2 \rfloor), & \text{n is odd}\\
-\end{cases}</script><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">1</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(n&amp;<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> (n&gt;&gt;<span class="number">1</span>)+solve(n&gt;&gt;<span class="number">1</span>)+solve(n-(n&gt;&gt;<span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (n&gt;&gt;<span class="number">1</span>)+(solve(n&gt;&gt;<span class="number">1</span>)&lt;&lt;<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;<span class="built_in">cin</span>&gt;&gt;T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="keyword">int</span> n;<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;solve(n)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>$$<br>S(n)=\begin{cases}<br>0, &amp; \text{if $ n&lt;=1 $}\<br>\lfloor n/2 \rfloor + 2S(\lfloor n/2 \rfloor), &amp; \text{n is even}\<br>\lfloor n/2 \rfloor + S(\lfloor n/2 \rfloor)+S(n-\lfloor n/2 \rfloor), &amp; \text{n is odd}\<br>\end{cases}<br>$$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">1</span>)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(n&amp;<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> (n&gt;&gt;<span class="number">1</span>)+solve(n&gt;&gt;<span class="number">1</span>)+solve(n-(n&gt;&gt;<span class="number">1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (n&gt;&gt;<span class="number">1</span>)+(solve(n&gt;&gt;<span class="number">1</span>)&lt;&lt;<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;<span class="built_in">cin</span>&gt;&gt;T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="keyword">int</span> n;<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;solve(n)&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="别不好意思，都是脂肪的人"><a href="#别不好意思，都是脂肪的人" class="headerlink" title="别不好意思，都是脂肪的人"></a>别不好意思，都是脂肪的人</h1><blockquote>
 <p>求<img src="http://www.ifrog.cc/uploads/2017/round23-4d-1.jpg" alt=""><br>数据保证答案是一个有理数，求出模 $10^9+7$ 意义下的值。</p>
 </blockquote>
 <p>有点意思的一道题。</p>
 <p>首先转化一下，计算 每一项的出现次数，即 $x_1+x_2+\dots+x_n=t$ 的整数解的数量（可为0），这一步是经典组合计数问题，答案为 $\binom{n-1+t}{n-1}$。然后就有</p>
-<script type="math/tex; mode=display">
-\text{原式}=\sum_{t=0}^{+ \infty} \binom{n-1+t}{n-1}(\frac{1}{k})^t*t</script><p>关于二项式系数有以下恒等式（$n \geq 0$）：</p>
-<script type="math/tex; mode=display">
-\frac{1}{(1-z)^{n+1}}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k</script><p>注意到此题中求和项中多了一个 $t$，那么对上述恒等式左右求导，由幂级数性质有</p>
-<script type="math/tex; mode=display">
-(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^{k-1}*k</script><p>左右再乘上 $z$，就和我们要求的式子形式相同了。</p>
-<script type="math/tex; mode=display">
-z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故原式等于 $zn(1-z)^{-(n+1)}$ ，其中 $z=1/k$。</p>
+<p>$$<br>\text{原式}=\sum_{t=0}^{+ \infty} \binom{n-1+t}{n-1}(\frac{1}{k})^t*t<br>$$</p>
+<p>关于二项式系数有以下恒等式（$n \geq 0$）：</p>
+<p>$$<br>\frac{1}{(1-z)^{n+1}}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k<br>$$</p>
+<p>注意到此题中求和项中多了一个 $t$，那么对上述恒等式左右求导，由幂级数性质有</p>
+<p>$$<br>(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^{k-1}*k<br>$$</p>
+<p>左右再乘上 $z$，就和我们要求的式子形式相同了。</p>
+<p>$$<br>z<em>(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k</em>k<br>$$</p>
+<p>故原式等于 $zn(1-z)^{-(n+1)}$ ，其中 $z=1/k$。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> LL;</span><br><span class="line"><span class="keyword">const</span> LL MOD=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">LL T,n,k;</span><br><span class="line"><span class="function">LL <span class="title">qpow</span><span class="params">(LL a,LL n)</span></span>&#123;</span><br><span class="line">    LL ans=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(n)&#123;</span><br><span class="line">        <span class="keyword">if</span>(n&amp;<span class="number">1</span>)ans=ans*a%MOD;</span><br><span class="line">        a=a*a%MOD;</span><br><span class="line">        n&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">inline</span> LL <span class="title">inv</span><span class="params">(LL x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> qpow(x,MOD<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;T;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;k;</span><br><span class="line">        LL z=inv(k);</span><br><span class="line">        LL t=inv((MOD+<span class="number">1</span>-z)%MOD);</span><br><span class="line">        LL ans=z*n%MOD*qpow(t,n+<span class="number">1</span>)%MOD;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -610,9 +620,7 @@ z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故�
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjYwNy85MTY4"></div>
     </div>
-
   
 
 
@@ -735,6 +743,12 @@ z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故�
           
 
           
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/Blog/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
           
 
           
@@ -860,6 +874,8 @@ z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故�
 
 
 
+  
+
 
 
 
@@ -889,6 +905,11 @@ z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故�
   
   
     <script type="text/javascript" src="/Blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/Blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
@@ -960,26 +981,37 @@ z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故�
 
 
   
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-
-
-
-
-
-
-
-
-
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '10IvSev51UrJMC2OQy4UVGw7-gzGzoHsz',
+        appKey: 'sFpaWMyoQpCCKevHFY7P877L',
+        placeholder: '',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1303,6 +1335,19 @@ z*(n+1)(1-z)^{-(n+2)}=\sum_{k=0}^{+\infty} \binom{n+k}{n} z^k*k</script><p>故�
   </script>
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/Blog/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/Blog/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/Blog/js/src/algolia-search.js?v=6.0.0"></script>
 
 
 

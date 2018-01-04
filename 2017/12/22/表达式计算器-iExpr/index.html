@@ -113,7 +113,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     fastclick: true,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
@@ -310,22 +310,26 @@
   
     <div class="site-search">
       
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
   </div>
-  <div id="local-search-result"></div>
-</div>
+
 
 
 
@@ -432,6 +436,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Blog/2017/12/22/表达式计算器-iExpr/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Blog/2017/12/22/表达式计算器-iExpr/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -612,23 +626,26 @@
 <ul>
 <li><code>sum(expr,l,r)</code> </li>
 </ul>
-<script type="math/tex; mode=display">\sum_l^r{expr}</script><p>变量自l到r（会自动转换为整数）遍历，带入expr求值（expr中应只含有一个变量），然后累加。 </p>
+<p>$$\sum_l^r{expr}$$<br>变量自l到r（会自动转换为整数）遍历，带入expr求值（expr中应只含有一个变量），然后累加。 </p>
 <ul>
 <li><code>prod(expr,l,r)</code> </li>
 </ul>
-<script type="math/tex; mode=display">\prod_l^r{expr}</script><p>变量自l到r遍历（会自动转换为整数），带入expr求值（expr中应只含有一个变量），然后累乘。 </p>
+<p>$$\prod_l^r{expr}$$<br>变量自l到r遍历（会自动转换为整数），带入expr求值（expr中应只含有一个变量），然后累乘。 </p>
 <h4 id="微积分部分"><a href="#微积分部分" class="headerlink" title="微积分部分"></a>微积分部分</h4><ul>
 <li><code>diff((vid)=&gt;(expr))</code></li>
 </ul>
-<script type="math/tex; mode=display">\frac{\mathrm{d}\,expr}{\mathrm{d}\,vid}</script><p>初等函数求导</p>
+<p>$$\frac{\mathrm{d}\,expr}{\mathrm{d}\,vid}$$</p>
+<p>初等函数求导</p>
 <ul>
 <li><code>diffi((vid)=&gt;(expr),x0)</code></li>
 </ul>
-<script type="math/tex; mode=display">\frac{f(x_0+step)-f(x_0)}{step}</script><p>使用差分计算 $x_0$ 处切线斜率。默认 step=0.001</p>
+<p>$$\frac{f(x_0+step)-f(x_0)}{step}$$</p>
+<p>使用差分计算 $x_0$ 处切线斜率。默认 step=0.001</p>
 <ul>
 <li><code>integ((x)=&gt;(expr),l,r)</code></li>
 </ul>
-<script type="math/tex; mode=display">\int_l^r{expr}\,\mathrm{d}\,x</script><p><code>expr</code>（单变量函数，变量名会自动选择）在 $[l,r]$ 上的定积分模拟：精度默认值为 $10^{-6}$</p>
+<p>$$\int_l^r{expr}\,\mathrm{d}\,x$$</p>
+<p><code>expr</code>（单变量函数，变量名会自动选择）在 $[l,r]$ 上的定积分模拟：精度默认值为 $10^{-6}$</p>
 <h4 id="数论部分"><a href="#数论部分" class="headerlink" title="数论部分"></a>数论部分</h4><ul>
 <li><code>gcd(int x,int y)</code></li>
 </ul>
@@ -656,15 +673,18 @@
 <h4 id="集合部分"><a href="#集合部分" class="headerlink" title="集合部分"></a>集合部分</h4><ul>
 <li><code>cup(v1,v2,...)</code></li>
 </ul>
-<script type="math/tex; mode=display">\bigcup v_i</script><p>并集，其中参数必须为集合类型</p>
+<p>$$\bigcup v_i$$</p>
+<p>并集，其中参数必须为集合类型</p>
 <ul>
 <li><code>cap(v1,v2,...)</code></li>
 </ul>
-<script type="math/tex; mode=display">\bigcap v_i</script><p>交集，其中参数必须为集合类型</p>
+<p>$$\bigcap v_i$$</p>
+<p>交集，其中参数必须为集合类型</p>
 <ul>
 <li><code>dif(v1,v2,...)</code></li>
 </ul>
-<script type="math/tex; mode=display">v_1 \setminus v2 \setminus v3 \setminus \dots</script><p>差集（v1-v2-v3-…），其中参数必须为集合类型</p>
+<p>$$v_1 \setminus v2 \setminus v3 \setminus \dots$$</p>
+<p>差集（v1-v2-v3-…），其中参数必须为集合类型</p>
 <h2 id="求值"><a href="#求值" class="headerlink" title="求值"></a>求值</h2><p>在代值页面点击刷新会加载当前表达式所有有意义变量（部分变量可能会在计算中被化简掉），设置变量值后点击计算会在计算结果区显示结果。</p>
 <h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2><p>对于单变量表达式，在图像页面可以绘制其图像。</p>
 <p>可以使用右侧按钮或鼠标滚轮放大缩小。拖动界面可移动绘图区域。</p>
@@ -900,9 +920,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjYwNy85MTY4"></div>
     </div>
-
   
 
 
@@ -1025,6 +1043,12 @@
           
 
           
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/Blog/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
           
 
           
@@ -1150,6 +1174,8 @@
 
 
 
+  
+
 
 
 
@@ -1179,6 +1205,11 @@
   
   
     <script type="text/javascript" src="/Blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/Blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
@@ -1250,26 +1281,37 @@
 
 
   
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-
-
-
-
-
-
-
-
-
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '10IvSev51UrJMC2OQy4UVGw7-gzGzoHsz',
+        appKey: 'sFpaWMyoQpCCKevHFY7P877L',
+        placeholder: '',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1593,6 +1635,19 @@
   </script>
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/Blog/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/Blog/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/Blog/js/src/algolia-search.js?v=6.0.0"></script>
 
 
 
