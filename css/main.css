@@ -644,14 +644,14 @@ pre .keyword,
 pre .javascript .function {
   color: #8959a8;
 }
-.full-image.full-image.full-image {
+.full-image.full-image.full-image.full-image {
   border: none;
   max-width: 100%;
   width: auto;
-  margin: 20px auto;
+  margin: 20px auto 25px;
 }
 @media (min-width: 992px) {
-  .full-image.full-image.full-image {
+  .full-image.full-image.full-image.full-image {
     max-width: none;
     width: 118%;
     margin: 0 -9%;
@@ -1642,6 +1642,13 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1658,57 +1665,6 @@ pre .javascript .function {
 }
 .rtl.post-title {
   font-family: UKIJ Ekran;
-}
-.my_post_copyright {
-  width: 85%;
-  max-width: 45em;
-  margin: 2.8em auto 0;
-  padding: 0.5em 1em;
-  border: 1px solid #d3d3d3;
-  font-size: 0.93rem;
-  line-height: 1.6em;
-  word-break: break-all;
-  background: rgba(255,255,255,0.4);
-}
-.my_post_copyright p {
-  margin: 0;
-}
-.my_post_copyright span {
-  display: inline-block;
-  width: 5.2em;
-  color: #b5b5b5;
-  font-weight: bold;
-}
-.my_post_copyright .raw {
-  margin-left: 1em;
-  width: 5em;
-}
-.my_post_copyright a {
-  color: #808080;
-  border-bottom: 0;
-}
-.my_post_copyright a:hover {
-  color: #a3d2a3;
-  text-decoration: underline;
-}
-.my_post_copyright:hover .fa-clipboard {
-  color: #000;
-}
-.my_post_copyright .post-url:hover {
-  font-weight: normal;
-}
-.my_post_copyright .copy-path {
-  margin-left: 1em;
-  width: 1em;
-}
-@media (max-width: 767px) {
-  .my_post_copyright .copy-path {
-    display: none;
-  }
-}
-.my_post_copyright .copy-path:hover {
-  color: #808080;
-  cursor: pointer;
 }
 .sidebar {
   position: fixed;
@@ -1874,7 +1830,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6ae830;
+  background: #ffffc3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1968,6 +1924,7 @@ pre .javascript .function {
 .post-toc .nav-item {
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: justify;
   white-space: nowrap;
   line-height: 1.8;
 }
@@ -2853,6 +2810,21 @@ pre .javascript .function {
   background: #f9f9f9;
   border-bottom-color: #fff;
 }
+.menu .menu-item .badge {
+  display: inline-block;
+  padding: 2px 5px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #ccc;
+  border-radius: 10px;
+  float: right;
+  margin: 0.35em 0.9em 0 0;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
 .menu .menu-item br {
   display: none;
 }
@@ -2911,7 +2883,6 @@ pre .javascript .function {
   position: absolute;
 }
 .site-overview {
-  margin: 0 2px;
   text-align: left;
 }
 .site-author:before,

@@ -59,25 +59,25 @@
 
 <link href="/Blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/Blog/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/Blog/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
 
 
-  <link rel="mask-icon" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3" color="#222">
+  <link rel="mask-icon" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0" color="#222">
 
 
 
 
 
-  <meta name="keywords" content="CS,Math," />
+  <meta name="keywords" content="Stardust D.L., Computer Science, App, Blog" />
 
 
 
@@ -90,23 +90,17 @@
 
 
 
-<meta name="description" content="伽罗瓦云：五次及以上多项式方程没有根式解。但面对生活中求解各种复杂方程的真实需求，是否束手无策？非也，今用牛顿迭代法高效求解方程的近似根。本文介绍了牛顿迭代法的推导和其计算机实现，并使用牛顿迭代法实现了开方等运算。  牛顿迭代法定义我们已知：微分是曲线的线性逼近。对于二阶连续可导函数 $y=f(x)$ ，设 $r$是 $f(x)=0$ 的根。对曲线上的任意一点 $A(x_0,y_0)$，作微分">
-<meta name="keywords" content="CS,Math">
-<meta property="og:type" content="article">
-<meta property="og:title" content="牛顿迭代法">
-<meta property="og:url" content="http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/index.html">
+<meta name="description" content="Stardust D.L.一个学习中的个人开发者。参与过OI，喜欢写点App。目前正在 Problem Solving.  个人OJ： StarOI  UWP 应用：iExpr">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我">
+<meta property="og:url" content="http://stardustdl.github.io/Blog/about/index.html">
 <meta property="og:site_name" content="Liang&#39;s Blog">
-<meta property="og:description" content="伽罗瓦云：五次及以上多项式方程没有根式解。但面对生活中求解各种复杂方程的真实需求，是否束手无策？非也，今用牛顿迭代法高效求解方程的近似根。本文介绍了牛顿迭代法的推导和其计算机实现，并使用牛顿迭代法实现了开方等运算。  牛顿迭代法定义我们已知：微分是曲线的线性逼近。对于二阶连续可导函数 $y=f(x)$ ，设 $r$是 $f(x)=0$ 的根。对曲线上的任意一点 $A(x_0,y_0)$，作微分">
+<meta property="og:description" content="Stardust D.L.一个学习中的个人开发者。参与过OI，喜欢写点App。目前正在 Problem Solving.  个人OJ： StarOI  UWP 应用：iExpr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://osyor26xu.bkt.clouddn.com/math2.png">
-<meta property="og:image" content="http://osyor26xu.bkt.clouddn.com/math3.png">
-<meta property="og:image" content="http://osyor26xu.bkt.clouddn.com/math4.png">
-<meta property="og:image" content="http://osyor26xu.bkt.clouddn.com/math1.png">
-<meta property="og:updated_time" content="2017-12-28T14:26:15.075Z">
+<meta property="og:updated_time" content="2017-12-23T13:43:12.905Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="牛顿迭代法">
-<meta name="twitter:description" content="伽罗瓦云：五次及以上多项式方程没有根式解。但面对生活中求解各种复杂方程的真实需求，是否束手无策？非也，今用牛顿迭代法高效求解方程的近似根。本文介绍了牛顿迭代法的推导和其计算机实现，并使用牛顿迭代法实现了开方等运算。  牛顿迭代法定义我们已知：微分是曲线的线性逼近。对于二阶连续可导函数 $y=f(x)$ ，设 $r$是 $f(x)=0$ 的根。对曲线上的任意一点 $A(x_0,y_0)$，作微分">
-<meta name="twitter:image" content="http://osyor26xu.bkt.clouddn.com/math2.png">
+<meta name="twitter:title" content="关于我">
+<meta name="twitter:description" content="Stardust D.L.一个学习中的个人开发者。参与过OI，喜欢写点App。目前正在 Problem Solving.  个人OJ： StarOI  UWP 应用：iExpr">
 
 
 
@@ -115,9 +109,11 @@
   var CONFIG = {
     root: '/Blog/',
     scheme: 'Gemini',
-    version: '5.1.3',
+    version: '6.0.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
+    fastclick: true,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
@@ -136,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/"/>
+  <link rel="canonical" href="http://stardustdl.github.io/Blog/about/"/>
 
 
 
@@ -194,7 +190,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"> <div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -231,7 +227,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+
+            
+              首页
+            
+
           </a>
         </li>
       
@@ -241,7 +241,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+
+            
+              关于
+            
+
           </a>
         </li>
       
@@ -251,7 +255,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+
+            
+              标签
+            
+
           </a>
         </li>
       
@@ -261,7 +269,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+
+            
+              分类
+            
+
           </a>
         </li>
       
@@ -271,7 +283,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+
+            
+              归档
+            
+
           </a>
         </li>
       
@@ -337,6 +353,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -371,9 +389,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-24T20:35:05+08:00">
-                2017-12-24
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-24T20:35:05+08:00">2017-12-24</time>
             
 
             
@@ -387,9 +403,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-12-28T22:26:15+08:00">
-                2017-12-28
-              </time>
+              <time title="更新于" itemprop="dateModified" datetime="2017-12-28T22:26:15+08:00">2017-12-28</time>
             
           </span>
 
@@ -437,37 +451,6 @@
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,335
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  5
-                </span>
-              
-            </div>
           
 
           
@@ -539,46 +522,28 @@
     
     
 
-    <div>
-      
-        
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/Blog/2017/12/24/牛顿迭代法/">牛顿迭代法</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 Stardust D.L. 的个人博客">Stardust D.L.</a></p>
-  <p><span>发布时间:</span>2017年12月24日 - 20:12</p>
-  <p><span>最后更新:</span>2017年12月28日 - 22:12</p>
-  <p><span>原始链接:</span><a href="/Blog/2017/12/24/牛顿迭代法/" title="牛顿迭代法">http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/"  aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-      $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({   
-          title: "",   
-          text: '复制成功',
-          icon: "success", 
-          showConfirmButton: true
-          });
-        });
-    });  
-</script>
-
-      
-    </div>
-
-
     
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Stardust D.L.
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/" title="牛顿迭代法">http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     
@@ -598,9 +563,9 @@
       
         <div class="post-tags">
           
-            <a href="/Blog/tags/CS/" rel="tag"> <i class="fa fa-tag"></i> CS</a>
+            <a href="/Blog/tags/CS/" rel="tag"><i class="fa fa-tag"></i> CS</a>
           
-            <a href="/Blog/tags/Math/" rel="tag"> <i class="fa fa-tag"></i> Math</a>
+            <a href="/Blog/tags/Math/" rel="tag"><i class="fa fa-tag"></i> Math</a>
           
         </div>
       
@@ -704,42 +669,42 @@
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/Blog/archives/">
+                
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/Blog/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/Blog/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/Blog/tags/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/Blog/categories/index.html">
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/Blog/tags/index.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -750,35 +715,35 @@
             </div>
           
 
-          <div class="links-of-author motion-element">
-            
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/StardustDL" target="_blank" title="GitHub">
-                    
-                      <i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="mailto:stardustdl@163.com" target="_blank" title="E-Mail">
-                    
-                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://plus.google.com/110214503730448545002" target="_blank" title="Google">
-                    
-                      <i class="fa fa-fw fa-google"></i>Google</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://vijos.org/d/StarOI/" target="_blank" title="OJ">
-                    
-                      <i class="fa fa-fw fa-code"></i>OJ</a>
-                </span>
-              
-            
-          </div>
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/StardustDL" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:stardustdl@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/110214503730448545002" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://vijos.org/d/StarOI/" target="_blank" title="OJ">
+                      
+                        <i class="fa fa-fw fa-code"></i>OJ</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -843,15 +808,11 @@
   <span class="author" itemprop="copyrightHolder">Stardust D.L.</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    <i class="fa fa-user-md"></i>
-    <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-    </span>
-  </div>
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
@@ -860,15 +821,10 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.0</div>
 
 
 
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共11.2k字</span>
-</div>
 
         
 
@@ -911,11 +867,19 @@
 
 
 
+  
+
+
+
+
 
 
 
 
   
+
+
+
 
 
 
@@ -940,11 +904,6 @@
 
   
   
-    <script type="text/javascript" src="/Blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/Blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -962,32 +921,32 @@
   
 
 
-  <script type="text/javascript" src="/Blog/js/src/utils.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/Blog/js/src/utils.js?v=6.0.0"></script>
 
-  <script type="text/javascript" src="/Blog/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/Blog/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/Blog/js/src/schemes/pisces.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/Blog/js/src/motion.js?v=6.0.0"></script>
 
 
 
   
-  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/Blog/js/src/post-details.js?v=5.1.3"></script>
+  
+
+
+  <script type="text/javascript" src="/Blog/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/Blog/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/Blog/js/src/post-details.js?v=6.0.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/Blog/js/src/bootstrap.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/Blog/js/src/bootstrap.js?v=6.0.0"></script>
 
 
 

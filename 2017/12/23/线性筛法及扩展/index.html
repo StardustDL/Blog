@@ -59,25 +59,25 @@
 
 <link href="/Blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/Blog/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/Blog/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
 
 
-  <link rel="mask-icon" href="http://osyor26xu.bkt.clouddn.com/star.png?v=5.1.3" color="#222">
+  <link rel="mask-icon" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0" color="#222">
 
 
 
 
 
-  <meta name="keywords" content="CS," />
+  <meta name="keywords" content="Stardust D.L., Computer Science, App, Blog" />
 
 
 
@@ -90,18 +90,17 @@
 
 
 
-<meta name="description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
-<meta name="keywords" content="CS">
-<meta property="og:type" content="article">
-<meta property="og:title" content="线性筛法及扩展">
-<meta property="og:url" content="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/index.html">
+<meta name="description" content="Stardust D.L.一个学习中的个人开发者。参与过OI，喜欢写点App。目前正在 Problem Solving.  个人OJ： StarOI  UWP 应用：iExpr">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我">
+<meta property="og:url" content="http://stardustdl.github.io/Blog/about/index.html">
 <meta property="og:site_name" content="Liang&#39;s Blog">
-<meta property="og:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
+<meta property="og:description" content="Stardust D.L.一个学习中的个人开发者。参与过OI，喜欢写点App。目前正在 Problem Solving.  个人OJ： StarOI  UWP 应用：iExpr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-03T05:52:22.616Z">
+<meta property="og:updated_time" content="2017-12-23T13:43:12.905Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线性筛法及扩展">
-<meta name="twitter:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
+<meta name="twitter:title" content="关于我">
+<meta name="twitter:description" content="Stardust D.L.一个学习中的个人开发者。参与过OI，喜欢写点App。目前正在 Problem Solving.  个人OJ： StarOI  UWP 应用：iExpr">
 
 
 
@@ -110,9 +109,11 @@
   var CONFIG = {
     root: '/Blog/',
     scheme: 'Gemini',
-    version: '5.1.3',
+    version: '6.0.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
+    fastclick: true,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
@@ -131,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/"/>
+  <link rel="canonical" href="http://stardustdl.github.io/Blog/about/"/>
 
 
 
@@ -189,7 +190,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"> <div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -226,7 +227,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+
+            
+              首页
+            
+
           </a>
         </li>
       
@@ -236,7 +241,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+
+            
+              关于
+            
+
           </a>
         </li>
       
@@ -246,7 +255,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+
+            
+              标签
+            
+
           </a>
         </li>
       
@@ -256,7 +269,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+
+            
+              分类
+            
+
           </a>
         </li>
       
@@ -266,7 +283,11 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+
+            
+              归档
+            
+
           </a>
         </li>
       
@@ -332,6 +353,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -366,9 +389,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T20:32:06+08:00">
-                2017-12-23
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T20:32:06+08:00">2017-12-23</time>
             
 
             
@@ -382,9 +403,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-03T13:52:22+08:00">
-                2018-01-03
-              </time>
+              <time title="更新于" itemprop="dateModified" datetime="2018-01-04T14:35:01+08:00">2018-01-04</time>
             
           </span>
 
@@ -433,37 +452,6 @@
           
 
           
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1,701
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  8
-                </span>
-              
-            </div>
-          
 
           
 
@@ -498,14 +486,14 @@
 <h3 id="扩展：求积性函数"><a href="#扩展：求积性函数" class="headerlink" title="扩展：求积性函数"></a>扩展：求积性函数</h3><p>积性函数定义：对于一个数论函数 $f(x)$，满足：若 $gcd(a,b)=1$ ，则 $f(ab)=f(a)f(b)$ 的函数 $f$ 。<br>由于这个性质，我们可以在筛法的同时求出积性函数的值<br>先看几个简单的积性函数：</p>
 <h4 id="id函数"><a href="#id函数" class="headerlink" title="id函数"></a>id函数</h4><p>定义 $id(i)=i$ ，显然满足积性。<br>这就不用筛了，直接得到值</p>
 <h4 id="e函数"><a href="#e函数" class="headerlink" title="e函数"></a>e函数</h4><p>又称单位函数，定义</p>
-<p>$$<br>e(n)=\begin{cases}<br>1, &amp; \text{if $ n=1 $}\<br>0, &amp; \text{otherwise}<br>\end{cases}<br>$$</p>
-<h4 id="phi函数"><a href="#phi函数" class="headerlink" title="phi函数"></a>phi函数</h4><p>欧拉函数，很有用，可以用来求逆元。<br>定义 </p>
-<p>$$\phi(i)=\sum_{j=1}^ie(gcd(j,i))$$</p>
-<p>即 $[1,n]$ 中，与 $n$ 互质的数的数量<br>易得对于质数，$phi(p)=p-1$，<br>对于合数有以下公式：</p>
-<p>$$n=\prod_{i=1}^r p_i^{q_i}$$</p>
-<p>$$\phi(n)=n<em>(1-1/p_1)</em>(1-1/p_2)*…$$</p>
-<p>将n带入可得</p>
-<p>$$phi(n)=\prod_{i=1}^r(p_i-1)*p_i^{q_i-1}$$<br>这就很容易发现它的积性性质<br>用筛法怎么求呢？<br>稍微改一下就行了：</p>
+<script type="math/tex; mode=display">
+e(n)=\begin{cases}
+1, & \text{if $ n=1 $}\\
+0, & \text{otherwise}
+\end{cases}</script><h4 id="phi函数"><a href="#phi函数" class="headerlink" title="phi函数"></a>phi函数</h4><p>欧拉函数，很有用，可以用来求逆元。<br>定义 </p>
+<script type="math/tex; mode=display">\phi(i)=\sum_{j=1}^ie(gcd(j,i))</script><p>即 $[1,n]$ 中，与 $n$ 互质的数的数量<br>易得对于质数，$phi(p)=p-1$，<br>对于合数有以下公式：</p>
+<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><script type="math/tex; mode=display">\phi(n)=n*(1-1/p_1)*(1-1/p_2)*...</script><p>将n带入可得</p>
+<script type="math/tex; mode=display">phi(n)=\prod_{i=1}^r(p_i-1)*p_i^{q_i-1}</script><p>这就很容易发现它的积性性质<br>用筛法怎么求呢？<br>稍微改一下就行了：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			phi[i]=i<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				phi[k]=phi[i]*pris[j];</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			phi[k]=phi[i]*(pris[j]<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>为什么呢？</p>
 <ol>
@@ -516,42 +504,38 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			mindivq[i]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				mindivq[k]=mindivq[i]+<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mindivq[k]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="约数个数"><a href="#约数个数" class="headerlink" title="约数个数"></a>约数个数</h4><p>首先约数个数如何求？</p>
 <p>分解质因数，得到</p>
-<p>$$n=\prod_{i=1}^r p_i^{q_i}$$</p>
-<p>则其 约数个数</p>
-<p>$$=\prod_{i=1}^r(qi+1)$$</p>
-<p>这个结论由乘法原理易得，每个质因子有 $qi+1$ 种选法。<br>积性就不证了，比较显然。</p>
+<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><p>则其 约数个数</p>
+<script type="math/tex; mode=display">=\prod_{i=1}^r(qi+1)</script><p>这个结论由乘法原理易得，每个质因子有 $qi+1$ 种选法。<br>积性就不证了，比较显然。</p>
 <p>怎么求呢？</p>
 <p>观察筛法的过程， <code>i</code> 是质数时或 <code>i%pris[j]!=0</code> 时都比较容易，主要是 <code>i%pris[j]==0</code> 时需要考虑好。</p>
 <p>下面来分析一下：</p>
 <p>关键在于如何由 <code>d(i)</code> 转移到 <code>d(i*pris[j])</code><br>首先筛法保证了 <code>pris[j]</code> 一定是最小质因子，那么由于 <code>i%pris[j]==0</code> ，则意味着最小质因子的指数会 $+1$，这一点在上面的 <code>mindivq</code> 求解过程中也体现了。</p>
 <p>$+1$ 会导致什么？</p>
 <p>很自然会想到 </p>
-<p>$$d(k)=d(i)*\frac{(mindivq[k]=mindivq[i]+1)+1}{mindivq[i]+1}$$<br>就是这样。</p>
+<script type="math/tex; mode=display">d(k)=d(i)*\frac{(mindivq[k]=mindivq[i]+1)+1}{mindivq[i]+1}</script><p>就是这样。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			mindivq[i]=<span class="number">1</span>;</span><br><span class="line">			d[i]=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				mindivq[k]=mindivq[i]+<span class="number">1</span>;</span><br><span class="line">				d[k]=d[i]/(mindivq[i]+<span class="number">1</span>)*(mindivq[k]+<span class="number">1</span>);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mindivq[k]=<span class="number">1</span>;</span><br><span class="line">			d[k]=d[i]*d[pris[j]];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="约数和"><a href="#约数和" class="headerlink" title="约数和"></a>约数和</h4><p>约数和又如何求？<br>分解质因数，得到</p>
-<p>$$n=\prod_{i=1}^r p_i^{q_i}$$</p>
-<p>则其 约数和 </p>
-<p>$$=\prod<em>{i=1}^r\sum</em>{j=0}^{q_i} p_i^j$$</p>
-<p>看起来也是比较显然，我们直接讨论如何利用筛法来求：</p>
-<p>依然是利用和上面的类似思路：<br>只讨论 <code>i%pris[j]==0</code> 的情况：<br>需要除以 $\sum<em>{n=0}^{mindivq[i]}(pris[j])^n$<br>再乘以 $\sum</em>{n=0}^{mindivq[k]}(pris[j])^n$<br>其中 $mindivq[k]=mindiv[i]+1$<br>这样开两个辅助数组记录</p>
-<p>$$t1[i]=\sum_{n=0}^{mindivq[i]}pris[j]^n$$</p>
-<p>$$t2[i]=(mindiv[i])^{mindivq[i]}$$</p>
-<p>就可以做了：</p>
+<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><p>则其 约数和 </p>
+<script type="math/tex; mode=display">=\prod_{i=1}^r\sum_{j=0}^{q_i} p_i^j</script><p>看起来也是比较显然，我们直接讨论如何利用筛法来求：</p>
+<p>依然是利用和上面的类似思路：<br>只讨论 <code>i%pris[j]==0</code> 的情况：<br>需要除以 $\sum_{n=0}^{mindivq[i]}(pris[j])^n$<br>再乘以 $\sum_{n=0}^{mindivq[k]}(pris[j])^n$<br>其中 $mindivq[k]=mindiv[i]+1$<br>这样开两个辅助数组记录</p>
+<script type="math/tex; mode=display">t1[i]=\sum_{n=0}^{mindivq[i]}pris[j]^n</script><script type="math/tex; mode=display">t2[i]=(mindiv[i])^{mindivq[i]}</script><p>就可以做了：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			sumd[i]=<span class="number">1</span>+i;</span><br><span class="line">			t1[i]=<span class="number">1</span>+i;</span><br><span class="line">			t2[i]=i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				t2[k]=t2[i]*pris[j];</span><br><span class="line">				t1[k]=t1[i]+t2[k];</span><br><span class="line">				sumd[k]=sumd[i]/t1[i]*t1[k];</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			sumd[k]=sumd[i]*sumd[pris[j]];</span><br><span class="line">			t1[k]=<span class="number">1</span>+pris[j];</span><br><span class="line">			t2[k]=pris[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="miu函数"><a href="#miu函数" class="headerlink" title="miu函数"></a>miu函数</h3><p>莫比乌斯函数，定义 </p>
-<p>$$<br>\mu(n)=\begin{cases}<br>1, &amp; \text{if $ n=1 $}\<br>0, &amp; \text{if $n$ is square free number}\<br>(-1)^{\text{质因数个数}}&amp; \text{otherwise}<br>\end{cases}<br>$$</p>
-<p>用筛法求也很简单：</p>
+<script type="math/tex; mode=display">
+\mu(n)=\begin{cases}
+1, & \text{if $ n=1 $}\\
+0, & \text{if $n$ is square free number}\\
+(-1)^{\text{质因数个数}}& \text{otherwise}
+\end{cases}</script><p>用筛法求也很简单：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			miu[i]=<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				miu[k]=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			miu[k]=-miu[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h4><p>由求逆元的欧拉定理方法易知乘法逆元也是积性的，而且有一个很优美的性质：它是完全积性的。</p>
 <p>所以求它变得很简单：</p>
-<p>$$inv[p]=p^{phi(n)-1}\mod n$$</p>
-<p>$$inv[k]=inv[i]*inv[pris[j]] \quad\text{if } gcd(k,n)=1$$</p>
-<p>然而乘法逆元有一个递推的方法，更加简单：</p>
+<script type="math/tex; mode=display">inv[p]=p^{phi(n)-1}\mod n</script><script type="math/tex; mode=display">inv[k]=inv[i]*inv[pris[j]] \quad\text{if } gcd(k,n)=1</script><p>然而乘法逆元有一个递推的方法，更加简单：</p>
 <p>首先逆元满足以下等式（定义）：</p>
-<p>$$ inv[P\text{ mod }i]*(P\text{ mod }i)=1 $$<br>将P % i展开：</p>
-<p>$$inv[P\text{ mod }i]<em>(P-\lfloor P/i \rfloor </em>i)=1$$<br>进一步展开：</p>
-<p>$$inv[P\text{ mod }i]<em>i</em>(-\lfloor P/i \rfloor)=1$$<br>会发现一个神奇的等式：</p>
-<p>$$i<em>(-\lfloor P/i \rfloor)</em>(inv[P\text{ mod }i])=1$$<br>此时 $(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])$ 就是 $i$ 的逆元！</p>
+<script type="math/tex; mode=display">inv[P\text{ mod }i]*(P\text{ mod }i)=1</script><p>将P % i展开：</p>
+<script type="math/tex; mode=display">inv[P\text{ mod }i]*(P-\lfloor P/i \rfloor *i)=1</script><p>进一步展开：</p>
+<script type="math/tex; mode=display">inv[P\text{ mod }i]*i*(-\lfloor P/i \rfloor)=1</script><p>会发现一个神奇的等式：</p>
+<script type="math/tex; mode=display">i*(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])=1</script><p>此时 $(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])$ 就是 $i$ 的逆元！</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>线性欧拉筛法简洁，积性函数性质优美，充分结合才能发挥更大的效果。同时又要注意到不同函数的性质，用筛法求积性函数的本质是根据积性函数的定义和运算式，利用筛法的特点，构造合适的转移方法。</p>
 
       
@@ -560,46 +544,28 @@
     
     
 
-    <div>
-      
-        
-<div class="my_post_copyright">
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-  <!-- JS库 sweetalert 可修改路径 -->
-  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/Blog/2017/12/23/线性筛法及扩展/">线性筛法及扩展</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 Stardust D.L. 的个人博客">Stardust D.L.</a></p>
-  <p><span>发布时间:</span>2017年12月23日 - 20:12</p>
-  <p><span>最后更新:</span>2018年01月03日 - 13:01</p>
-  <p><span>原始链接:</span><a href="/Blog/2017/12/23/线性筛法及扩展/" title="线性筛法及扩展">http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/"  aria-label="复制成功！"></i></span>
-  </p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
-</div>
-<script> 
-    var clipboard = new Clipboard('.fa-clipboard');
-      $(".fa-clipboard").click(function(){
-      clipboard.on('success', function(){
-        swal({   
-          title: "",   
-          text: '复制成功',
-          icon: "success", 
-          showConfirmButton: true
-          });
-        });
-    });  
-</script>
-
-      
-    </div>
-
-
     
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Stardust D.L.
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/" title="线性筛法及扩展">http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     
@@ -619,7 +585,7 @@
       
         <div class="post-tags">
           
-            <a href="/Blog/tags/CS/" rel="tag"> <i class="fa fa-tag"></i> CS</a>
+            <a href="/Blog/tags/CS/" rel="tag"><i class="fa fa-tag"></i> CS</a>
           
         </div>
       
@@ -723,42 +689,42 @@
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/Blog/archives/">
+                
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/Blog/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/Blog/categories/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">11</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/Blog/tags/index.html">
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/Blog/categories/index.html">
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/Blog/tags/index.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -769,35 +735,35 @@
             </div>
           
 
-          <div class="links-of-author motion-element">
-            
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/StardustDL" target="_blank" title="GitHub">
-                    
-                      <i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="mailto:stardustdl@163.com" target="_blank" title="E-Mail">
-                    
-                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://plus.google.com/110214503730448545002" target="_blank" title="Google">
-                    
-                      <i class="fa fa-fw fa-google"></i>Google</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://vijos.org/d/StarOI/" target="_blank" title="OJ">
-                    
-                      <i class="fa fa-fw fa-code"></i>OJ</a>
-                </span>
-              
-            
-          </div>
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/StardustDL" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:stardustdl@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/110214503730448545002" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://vijos.org/d/StarOI/" target="_blank" title="OJ">
+                      
+                        <i class="fa fa-fw fa-code"></i>OJ</a>
+                  </span>
+                
+            </div>
+          
 
           
           
@@ -862,15 +828,11 @@
   <span class="author" itemprop="copyrightHolder">Stardust D.L.</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">
-    <i class="fa fa-user-md"></i>
-    <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-    </span>
-  </div>
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
@@ -879,15 +841,10 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.0</div>
 
 
 
-
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共11.2k字</span>
-</div>
 
         
 
@@ -930,11 +887,19 @@
 
 
 
+  
+
+
+
+
 
 
 
 
   
+
+
+
 
 
 
@@ -959,11 +924,6 @@
 
   
   
-    <script type="text/javascript" src="/Blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/Blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -981,32 +941,32 @@
   
 
 
-  <script type="text/javascript" src="/Blog/js/src/utils.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/Blog/js/src/utils.js?v=6.0.0"></script>
 
-  <script type="text/javascript" src="/Blog/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/Blog/js/src/affix.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/Blog/js/src/schemes/pisces.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/Blog/js/src/motion.js?v=6.0.0"></script>
 
 
 
   
-  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/Blog/js/src/post-details.js?v=5.1.3"></script>
+  
+
+
+  <script type="text/javascript" src="/Blog/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/Blog/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=6.0.0"></script>
+<script type="text/javascript" src="/Blog/js/src/post-details.js?v=6.0.0"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/Blog/js/src/bootstrap.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/Blog/js/src/bootstrap.js?v=6.0.0"></script>
 
 
 
