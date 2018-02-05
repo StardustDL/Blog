@@ -6,7 +6,7 @@
   <link href="/Blog/atom.xml" rel="self"/>
   
   <link href="http://stardustdl.github.io/Blog/"/>
-  <updated>2018-01-03T06:25:11.648Z</updated>
+  <updated>2018-02-05T09:52:59.488Z</updated>
   <id>http://stardustdl.github.io/Blog/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DailyCheckin 日程管理</title>
+    <link href="http://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86/"/>
+    <id>http://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-日程管理/</id>
+    <published>2018-02-05T09:42:05.000Z</published>
+    <updated>2018-02-05T09:52:59.488Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>一个简约的日程管理软件。<br>您可以给日程分类，打上标记，选择推迟或设置重要性。</p><p><img src="http://osyor26xu.bkt.clouddn.com/images/dailycheckin/home.png" alt=""><br><img src="http://osyor26xu.bkt.clouddn.com/images/dailycheckin/tags.png" alt=""><br><img src="http://osyor26xu.bkt.clouddn.com/images/dailycheckin/category.png" alt=""></p><h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a><a href="https://www.microsoft.com/store/apps/9N5PRS2MB03C" target="_blank" rel="noopener">链接</a></h1><h1 id="反馈收集"><a href="#反馈收集" class="headerlink" title="反馈收集"></a>反馈收集</h1><p>请于下方评论区留言，谢谢。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;一个简约的日程管理软件。&lt;br&gt;您可以给日程分类，打上标记，选择推迟或设置重要性。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://osyo
+      
+    
+    </summary>
+    
+      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+    
+    
+      <category term="Apps" scheme="http://stardustdl.github.io/Blog/tags/Apps/"/>
+    
+  </entry>
   
   <entry>
     <title>HackerRank HourRank 25</title>
