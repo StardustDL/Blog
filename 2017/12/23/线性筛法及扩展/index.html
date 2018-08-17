@@ -2,27 +2,51 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 
 
 
   
   
+  <link rel="stylesheet" href="/Blog/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+  
+  
+    
+      
     
     
-  <script src="/Blog/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/Blog/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
 
 
 
+
+  
+  
+  <link rel="stylesheet" media="all" href="/Blog/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -32,9 +56,9 @@
 
 
 
-  <meta name="google-site-verification" content="NXg4I1Z9ujERt_jiwvgvstsKMToNRkoBhNMejRzRAzE" />
 
 
+  <meta name="msvalidate.01" content="B9EE867FA63C5C44FEDD770F53BFBE7A" />
 
 
 
@@ -54,54 +78,56 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/Blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/Blog/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
+<link href="/Blog/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Blog/images/apple-touch-icon-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Blog/images/favicon-32x32-next.png?v=6.4.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Blog/images/favicon-16x16-next.png?v=6.4.0">
 
 
-  <link rel="mask-icon" href="http://osyor26xu.bkt.clouddn.com/star.png?v=6.0.0" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="CS," />
-
-
-
-
-
-  <link rel="alternate" href="/Blog/atom.xml" title="Liang's Blog" type="application/atom+xml" />
+  <link rel="mask-icon" href="/Blog/images/logo.svg?v=6.4.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
-<meta name="keywords" content="CS">
-<meta property="og:type" content="article">
-<meta property="og:title" content="线性筛法及扩展">
-<meta property="og:url" content="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/index.html">
-<meta property="og:site_name" content="Liang&#39;s Blog">
-<meta property="og:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-04T06:35:01.726Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="线性筛法及扩展">
-<meta name="twitter:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元   标准筛法欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)两种等价实现易于理解版： 12345678">
 
 
 
@@ -110,17 +136,13 @@
   var CONFIG = {
     root: '/Blog/',
     scheme: 'Gemini',
-    version: '6.0.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     fastclick: true,
     lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -132,32 +154,38 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元    标准筛法 欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n) 两种等价实现 易于理解版： 1234">
+<meta name="keywords" content="CS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性筛法及扩展">
+<meta property="og:url" content="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/index.html">
+<meta property="og:site_name" content="Liang&#39;s Blog">
+<meta property="og:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元    标准筛法 欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n) 两种等价实现 易于理解版： 1234">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-08-17T08:29:49.197Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="线性筛法及扩展">
+<meta name="twitter:description" content="以下代码中的定义：  mindiv[i]: i的最小质因子 phi[i]: 欧拉函数i的值 mindivq[i]: i的最小质因子的个数 d[i]: i的约数个数 sumd[i]: i的约数和 miu[i]: 莫比乌斯函数i的值 inv[i]: i在mod n意义下的乘法逆元    标准筛法 欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n) 两种等价实现 易于理解版： 1234">
+
+
+
+
+
 
   <link rel="canonical" href="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/"/>
 
 
 
-
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
 </script>
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
-  daovoice('init', {
-      app_id: "82527a2e"
-    });
-  daovoice('update');
-  </script>
-
 
   <title>线性筛法及扩展 | Liang's Blog</title>
   
@@ -165,22 +193,50 @@
 
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111573521-2"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-111573521-1', 'auto');
-  ga('send', 'pageview');
-</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111573521-2');
+</script>
 
 
 
 
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -191,24 +247,22 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"> <div class="site-brand-wrapper">
+      <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/Blog/"  class="brand" rel="start">
+      <a href="/Blog/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Liang's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -216,96 +270,66 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/Blog/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-
-            
-              首页
-            
-
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/Blog/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-
-            
-              关于
-            
-
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/Blog/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-
-            
-              标签
-            
-
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/Blog/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
         
-        <li class="menu-item menu-item-categories">
-          <a href="/Blog/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-
-            
-              分类
-            
-
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/Blog/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/Blog/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/Blog/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/Blog/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/Blog/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
 
-            
-              归档
-            
-
-          </a>
-        </li>
       
-
       
         <li class="menu-item menu-item-search">
           
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
         </li>
       
     </ul>
+  
+
   
 
   
@@ -336,12 +360,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
 
@@ -355,6 +390,8 @@
   
 
   
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -366,7 +403,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Stardust D.L.">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://osyor26xu.bkt.clouddn.com/head.png">
+      <meta itemprop="image" content="/Blog/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -378,11 +415,19 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">线性筛法及扩展</h1>
+          <h2 class="post-title" itemprop="name headline">线性筛法及扩展
+              
+            
+          </h2>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -390,21 +435,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-23T20:32:06+08:00">2017-12-23</time>
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-23 20:32:06" itemprop="dateCreated datePublished" datetime="2017-12-23T20:32:06+08:00">2017-12-23</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
+              
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
               
-                <span class="post-meta-item-text">更新于&#58;</span>
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-17 16:29:49" itemprop="dateModified" datetime="2018-08-17T16:29:49+08:00">2018-08-17</time>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-01-04T14:35:01+08:00">2018-01-04</time>
             
           </span>
 
@@ -420,11 +474,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/Blog/categories/Studies/" itemprop="url" rel="index">
-                    <span itemprop="name">Studies</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/Blog/categories/Studies/" itemprop="url" rel="index"><span itemprop="name">Studies</span></a></span>
 
                 
                 
@@ -440,7 +490,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/Blog/2017/12/23/线性筛法及扩展/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/Blog/2017/12/23/线性筛法及扩展/" itemprop="commentCount"></span>
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/Blog/2017/12/23/线性筛法及扩展/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -448,18 +498,15 @@
 
           
           
-             <span id="/Blog/2017/12/23/线性筛法及扩展/" class="leancloud_visitors" data-flag-title="线性筛法及扩展">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
           
 
           
@@ -473,7 +520,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -490,67 +537,135 @@
 <li>inv[i]: i在mod n意义下的乘法逆元</li>
 </ul>
 <hr>
-<h3 id="标准筛法"><a href="#标准筛法" class="headerlink" title="标准筛法"></a>标准筛法</h3><p>欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)<br>两种等价实现<br>易于理解版：</p>
+<h3 id="标准筛法"><a class="markdownIt-Anchor" href="#标准筛法"></a> 标准筛法</h3>
+<p>欧拉筛法，可以保证每个数只被自己最小的质因子筛去，时间复杂度O(n)<br>
+两种等价实现<br>
+易于理解版：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>又短又快版（避免了取模运算）：<strong>（待更新）</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)<span class="keyword">break</span>;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="扩展：求积性函数"><a href="#扩展：求积性函数" class="headerlink" title="扩展：求积性函数"></a>扩展：求积性函数</h3><p>积性函数定义：对于一个数论函数 $f(x)$，满足：若 $gcd(a,b)=1$ ，则 $f(ab)=f(a)f(b)$ 的函数 $f$ 。<br>由于这个性质，我们可以在筛法的同时求出积性函数的值<br>先看几个简单的积性函数：</p>
-<h4 id="id函数"><a href="#id函数" class="headerlink" title="id函数"></a>id函数</h4><p>定义 $id(i)=i$ ，显然满足积性。<br>这就不用筛了，直接得到值</p>
-<h4 id="e函数"><a href="#e函数" class="headerlink" title="e函数"></a>e函数</h4><p>又称单位函数，定义</p>
-<script type="math/tex; mode=display">
-e(n)=\begin{cases}
-1, & \text{if $ n=1 $}\\
-0, & \text{otherwise}
-\end{cases}</script><h4 id="phi函数"><a href="#phi函数" class="headerlink" title="phi函数"></a>phi函数</h4><p>欧拉函数，很有用，可以用来求逆元。<br>定义 </p>
-<script type="math/tex; mode=display">\phi(i)=\sum_{j=1}^ie(gcd(j,i))</script><p>即 $[1,n]$ 中，与 $n$ 互质的数的数量<br>易得对于质数，$phi(p)=p-1$，<br>对于合数有以下公式：</p>
-<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><script type="math/tex; mode=display">\phi(n)=n*(1-1/p_1)*(1-1/p_2)*...</script><p>将n带入可得</p>
-<script type="math/tex; mode=display">phi(n)=\prod_{i=1}^r(p_i-1)*p_i^{q_i-1}</script><p>这就很容易发现它的积性性质<br>用筛法怎么求呢？<br>稍微改一下就行了：</p>
+<h3 id="扩展求积性函数"><a class="markdownIt-Anchor" href="#扩展求积性函数"></a> 扩展：求积性函数</h3>
+<p>积性函数定义：对于一个数论函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span></span></span></span>，满足：若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>g</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">gcd(a,b)=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit">b</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span> ，则 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>a</mi><mi>b</mi><mo>)</mo><mo>=</mo><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo><mi>f</mi><mo>(</mo><mi>b</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(ab)=f(a)f(b)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mord mathit">b</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mclose">)</span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">b</span><span class="mclose">)</span></span></span></span> 的函数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.10764em;">f</span></span></span></span> 。<br>
+由于这个性质，我们可以在筛法的同时求出积性函数的值<br>
+先看几个简单的积性函数：</p>
+<h4 id="id函数"><a class="markdownIt-Anchor" href="#id函数"></a> id函数</h4>
+<p>定义 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>d</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">id(i)=i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">i</span></span></span></span> ，显然满足积性。<br>
+这就不用筛了，直接得到值</p>
+<h4 id="e函数"><a class="markdownIt-Anchor" href="#e函数"></a> e函数</h4>
+<p>又称单位函数，定义</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mrow><mtext>if </mtext><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi><mo>=</mo><mn>1</mn></mstyle></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>otherwise</mtext></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">e(n)=\begin{cases}
+1, &amp; \text{if $ n=1 $}\\
+0, &amp; \text{otherwise}
+\end{cases}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.75em;"></span><span class="strut bottom" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="base"><span class="mord mathit">e</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">1</span><span class="mpunct">,</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">if </span><span class="mord mathit">n</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">otherwise</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<h4 id="phi函数"><a class="markdownIt-Anchor" href="#phi函数"></a> phi函数</h4>
+<p>欧拉函数，很有用，可以用来求逆元。<br>
+定义</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ϕ</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>i</mi></munderover><mi>e</mi><mo>(</mo><mi>g</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>j</mi><mo separator="true">,</mo><mi>i</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">\phi(i)=\sum_{j=1}^ie(gcd(j,i))
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.8116690000000006em;"></span><span class="strut bottom" style="height:3.2254460000000007em;vertical-align:-1.4137769999999998em;"></span><span class="base"><span class="mord mathit">ϕ</span><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8116690000000006em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4137769999999998em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit">e</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span></span></p>
+<p>即 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mn>1</mn><mo separator="true">,</mo><mi>n</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[1,n]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit">n</span><span class="mclose">]</span></span></span></span> 中，与 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">n</span></span></span></span> 互质的数的数量<br>
+易得对于质数，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>h</mi><mi>i</mi><mo>(</mo><mi>p</mi><mo>)</mo><mo>=</mo><mi>p</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">phi(p)=p-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">p</span><span class="mord mathit">h</span><span class="mord mathit">i</span><span class="mopen">(</span><span class="mord mathit">p</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">p</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span></span>，<br>
+对于合数有以下公式：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><msubsup><mi>p</mi><mi>i</mi><msub><mi>q</mi><mi>i</mi></msub></msubsup></mrow><annotation encoding="application/x-tex">n=\prod_{i=1}^r p_i^{q_i}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="base"><span class="mord mathit">n</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7822999999999999em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.180908em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ϕ</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi mathvariant="normal">/</mi><msub><mi>p</mi><mn>1</mn></msub><mo>)</mo><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi mathvariant="normal">/</mi><msub><mi>p</mi><mn>2</mn></msub><mo>)</mo><mo>∗</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\phi(n)=n*(1-1/p_1)*(1-1/p_2)*...
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">ϕ</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">n</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord">/</span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mord">/</span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span></span></span></span></span></p>
+<p>将n带入可得</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi>h</mi><mi>i</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><mo>(</mo><msub><mi>p</mi><mi>i</mi></msub><mo>−</mo><mn>1</mn><mo>)</mo><mo>∗</mo><msubsup><mi>p</mi><mi>i</mi><mrow><msub><mi>q</mi><mi>i</mi></msub><mo>−</mo><mn>1</mn></mrow></msubsup></mrow><annotation encoding="application/x-tex">phi(n)=\prod_{i=1}^r(p_i-1)*p_i^{q_i-1}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="base"><span class="mord mathit">p</span><span class="mord mathit">h</span><span class="mord mathit">i</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9320159999999998em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.180908em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span></span></span></span></span></p>
+<p>这就很容易发现它的积性性质<br>
+用筛法怎么求呢？<br>
+稍微改一下就行了：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			phi[i]=i<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				phi[k]=phi[i]*pris[j];</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			phi[k]=phi[i]*(pris[j]<span class="number">-1</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>为什么呢？</p>
 <ol>
 <li>对于 <code>i%pris[j]!=0</code> 的项，它的最小质因子一定是 <code>pris[j]</code> ，则由积性函数性质可得 <code>phi[k]=phi[i]*phi[pris[j]]</code> ，其中<code>phi[pris[j]]=pris[j]-1</code></li>
-<li>对于 <code>i%pris[j]==0</code> 的项，则说明 <code>pris[j]</code> 已经在 <code>i</code> 中已经出现了，而且是最小的，观察 $\phi$ 函数的计算式，可知此时应乘 <code>pris[j]</code></li>
+<li>对于 <code>i%pris[j]==0</code> 的项，则说明 <code>pris[j]</code> 已经在 <code>i</code> 中已经出现了，而且是最小的，观察 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">ϕ</span></span></span></span> 函数的计算式，可知此时应乘 <code>pris[j]</code></li>
 </ol>
-<h4 id="最小质因数的指数"><a href="#最小质因数的指数" class="headerlink" title="最小质因数的指数"></a>最小质因数的指数</h4><p>这个就很简单了：</p>
+<h4 id="最小质因数的指数"><a class="markdownIt-Anchor" href="#最小质因数的指数"></a> 最小质因数的指数</h4>
+<p>这个就很简单了：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			mindivq[i]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				mindivq[k]=mindivq[i]+<span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mindivq[k]=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="约数个数"><a href="#约数个数" class="headerlink" title="约数个数"></a>约数个数</h4><p>首先约数个数如何求？</p>
+<h4 id="约数个数"><a class="markdownIt-Anchor" href="#约数个数"></a> 约数个数</h4>
+<p>首先约数个数如何求？</p>
 <p>分解质因数，得到</p>
-<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><p>则其 约数个数</p>
-<script type="math/tex; mode=display">=\prod_{i=1}^r(qi+1)</script><p>这个结论由乘法原理易得，每个质因子有 $qi+1$ 种选法。<br>积性就不证了，比较显然。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><msubsup><mi>p</mi><mi>i</mi><msub><mi>q</mi><mi>i</mi></msub></msubsup></mrow><annotation encoding="application/x-tex">n=\prod_{i=1}^r p_i^{q_i}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="base"><span class="mord mathit">n</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7822999999999999em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.180908em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span></span></span></span></span></p>
+<p>则其 约数个数</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><mo>(</mo><mi>q</mi><mi>i</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">=\prod_{i=1}^r(qi+1)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="base"><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mord mathit">i</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+<p>这个结论由乘法原理易得，每个质因子有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>q</mi><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">qi+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mord mathit">i</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span></span> 种选法。<br>
+积性就不证了，比较显然。</p>
 <p>怎么求呢？</p>
 <p>观察筛法的过程， <code>i</code> 是质数时或 <code>i%pris[j]!=0</code> 时都比较容易，主要是 <code>i%pris[j]==0</code> 时需要考虑好。</p>
 <p>下面来分析一下：</p>
-<p>关键在于如何由 <code>d(i)</code> 转移到 <code>d(i*pris[j])</code><br>首先筛法保证了 <code>pris[j]</code> 一定是最小质因子，那么由于 <code>i%pris[j]==0</code> ，则意味着最小质因子的指数会 $+1$，这一点在上面的 <code>mindivq</code> 求解过程中也体现了。</p>
-<p>$+1$ 会导致什么？</p>
-<p>很自然会想到 </p>
-<script type="math/tex; mode=display">d(k)=d(i)*\frac{(mindivq[k]=mindivq[i]+1)+1}{mindivq[i]+1}</script><p>就是这样。</p>
+<p>关键在于如何由 <code>d(i)</code> 转移到 <code>d(i*pris[j])</code><br>
+首先筛法保证了 <code>pris[j]</code> 一定是最小质因子，那么由于 <code>i%pris[j]==0</code> ，则意味着最小质因子的指数会 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base"><span class="mord">+</span><span class="mord">1</span></span></span></span>，这一点在上面的 <code>mindivq</code> 求解过程中也体现了。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base"><span class="mord">+</span><span class="mord">1</span></span></span></span> 会导致什么？</p>
+<p>很自然会想到</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mo>(</mo><mi>k</mi><mo>)</mo><mo>=</mo><mi>d</mi><mo>(</mo><mi>i</mi><mo>)</mo><mo>∗</mo><mfrac><mrow><mo>(</mo><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>k</mi><mo>]</mo><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>+</mo><mn>1</mn><mo>)</mo><mo>+</mo><mn>1</mn></mrow><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">d(k)=d(i)*\frac{(mindivq[k]=mindivq[i]+1)+1}{mindivq[i]+1}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.427em;"></span><span class="strut bottom" style="height:2.363em;vertical-align:-0.936em;"></span><span class="base"><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-3.15em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.2em;"><svg width="400em" height="0.2em" viewbox="0 0 400000 200" preserveaspectratio="xMinYMin slice"><path d="M0 80H400000 v40H0z M0 80H400000 v40H0z"/></svg></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>就是这样。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			mindivq[i]=<span class="number">1</span>;</span><br><span class="line">			d[i]=<span class="number">2</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				mindivq[k]=mindivq[i]+<span class="number">1</span>;</span><br><span class="line">				d[k]=d[i]/(mindivq[i]+<span class="number">1</span>)*(mindivq[k]+<span class="number">1</span>);</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mindivq[k]=<span class="number">1</span>;</span><br><span class="line">			d[k]=d[i]*d[pris[j]];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="约数和"><a href="#约数和" class="headerlink" title="约数和"></a>约数和</h4><p>约数和又如何求？<br>分解质因数，得到</p>
-<script type="math/tex; mode=display">n=\prod_{i=1}^r p_i^{q_i}</script><p>则其 约数和 </p>
-<script type="math/tex; mode=display">=\prod_{i=1}^r\sum_{j=0}^{q_i} p_i^j</script><p>看起来也是比较显然，我们直接讨论如何利用筛法来求：</p>
-<p>依然是利用和上面的类似思路：<br>只讨论 <code>i%pris[j]==0</code> 的情况：<br>需要除以 $\sum_{n=0}^{mindivq[i]}(pris[j])^n$<br>再乘以 $\sum_{n=0}^{mindivq[k]}(pris[j])^n$<br>其中 $mindivq[k]=mindiv[i]+1$<br>这样开两个辅助数组记录</p>
-<script type="math/tex; mode=display">t1[i]=\sum_{n=0}^{mindivq[i]}pris[j]^n</script><script type="math/tex; mode=display">t2[i]=(mindiv[i])^{mindivq[i]}</script><p>就可以做了：</p>
+<h4 id="约数和"><a class="markdownIt-Anchor" href="#约数和"></a> 约数和</h4>
+<p>约数和又如何求？<br>
+分解质因数，得到</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><msubsup><mi>p</mi><mi>i</mi><msub><mi>q</mi><mi>i</mi></msub></msubsup></mrow><annotation encoding="application/x-tex">n=\prod_{i=1}^r p_i^{q_i}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="base"><span class="mord mathit">n</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7822999999999999em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.180908em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span></span></span></span></span></p>
+<p>则其 约数和</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><msub><mi>q</mi><mi>i</mi></msub></munderover><msubsup><mi>p</mi><mi>i</mi><mi>j</mi></msubsup></mrow><annotation encoding="application/x-tex">=\prod_{i=1}^r\sum_{j=0}^{q_i} p_i^j
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6985050000000006em;"></span><span class="strut bottom" style="height:3.1122820000000004em;vertical-align:-1.4137769999999998em;"></span><span class="base"><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∏</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6985050000000006em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.347113em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.03588em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathit mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4137769999999998em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9425719999999999em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">i</span></span></span><span style="top:-3.180908em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.276864em;"></span></span></span></span></span></span></span></span></span></p>
+<p>看起来也是比较显然，我们直接讨论如何利用筛法来求：</p>
+<p>依然是利用和上面的类似思路：<br>
+只讨论 <code>i%pris[j]==0</code> 的情况：<br>
+需要除以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></msubsup><mo>(</mo><mi>p</mi><mi>r</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>j</mi><mo>]</mo><msup><mo>)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{mindivq[i]}(pris[j])^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0278999999999998em;"></span><span class="strut bottom" style="height:1.32761em;vertical-align:-0.29971000000000003em;"></span><span class="base"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0278999999999998em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">m</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight">d</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="mopen mtight">[</span><span class="mord mathit mtight">i</span><span class="mclose mtight">]</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mclose">]</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span></span></span></span></span></span></span></span><br>
+再乘以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>k</mi><mo>]</mo></mrow></msubsup><mo>(</mo><mi>p</mi><mi>r</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>j</mi><mo>]</mo><msup><mo>)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{mindivq[k]}(pris[j])^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.0278999999999998em;"></span><span class="strut bottom" style="height:1.32761em;vertical-align:-0.29971000000000003em;"></span><span class="base"><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0278999999999998em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">m</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight">d</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="mopen mtight">[</span><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span><span class="mclose mtight">]</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"></span></span></span></span></span><span class="mopen">(</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mclose">]</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span></span></span></span></span></span></span></span><br>
+其中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>k</mi><mo>]</mo><mo>=</mo><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">mindivq[k]=mindiv[i]+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span></span><br>
+这样开两个辅助数组记录</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mn>1</mn><mo>[</mo><mi>i</mi><mo>]</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></munderover><mi>p</mi><mi>r</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>j</mi><msup><mo>]</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">t1[i]=\sum_{n=0}^{mindivq[i]}pris[j]^n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.9610050000000003em;"></span><span class="strut bottom" style="height:3.2281180000000003em;vertical-align:-1.267113em;"></span><span class="base"><span class="mord mathit">t</span><span class="mord">1</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.9610050000000003em;"><span style="top:-1.882887em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">n</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.386005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">m</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight">d</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="mopen mtight">[</span><span class="mord mathit mtight">i</span><span class="mclose mtight">]</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.267113em;"></span></span></span></span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">n</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mn>2</mn><mo>[</mo><mi>i</mi><mo>]</mo><mo>=</mo><mo>(</mo><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mo>[</mo><mi>i</mi><mo>]</mo><msup><mo>)</mo><mrow><mi>m</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>i</mi><mi>v</mi><mi>q</mi><mo>[</mo><mi>i</mi><mo>]</mo></mrow></msup></mrow><annotation encoding="application/x-tex">t2[i]=(mindiv[i])^{mindivq[i]}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.938em;"></span><span class="strut bottom" style="height:1.188em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">t</span><span class="mord">2</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mopen">(</span><span class="mord mathit">m</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit">d</span><span class="mord mathit">i</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">m</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight">n</span><span class="mord mathit mtight">d</span><span class="mord mathit mtight">i</span><span class="mord mathit mtight" style="margin-right:0.03588em;">v</span><span class="mord mathit mtight" style="margin-right:0.03588em;">q</span><span class="mopen mtight">[</span><span class="mord mathit mtight">i</span><span class="mclose mtight">]</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>就可以做了：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			sumd[i]=<span class="number">1</span>+i;</span><br><span class="line">			t1[i]=<span class="number">1</span>+i;</span><br><span class="line">			t2[i]=i;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				t2[k]=t2[i]*pris[j];</span><br><span class="line">				t1[k]=t1[i]+t2[k];</span><br><span class="line">				sumd[k]=sumd[i]/t1[i]*t1[k];</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			sumd[k]=sumd[i]*sumd[pris[j]];</span><br><span class="line">			t1[k]=<span class="number">1</span>+pris[j];</span><br><span class="line">			t2[k]=pris[j];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="miu函数"><a href="#miu函数" class="headerlink" title="miu函数"></a>miu函数</h3><p>莫比乌斯函数，定义 </p>
-<script type="math/tex; mode=display">
-\mu(n)=\begin{cases}
-1, & \text{if $ n=1 $}\\
-0, & \text{if $n$ is square free number}\\
-(-1)^{\text{质因数个数}}& \text{otherwise}
-\end{cases}</script><p>用筛法求也很简单：</p>
+<h3 id="miu函数"><a class="markdownIt-Anchor" href="#miu函数"></a> miu函数</h3>
+<p>莫比乌斯函数，定义</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>μ</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mrow><mo fence="true">{</mo><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>1</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mrow><mtext>if </mtext><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi><mo>=</mo><mn>1</mn></mstyle></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo separator="true">,</mo></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mrow><mtext>if  is square free number</mtext><mstyle scriptlevel="0" displaystyle="false"><mi>n</mi></mstyle></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>(</mo><mo>−</mo><mn>1</mn><msup><mo>)</mo><mtext>质因数个数</mtext></msup></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mtext>otherwise</mtext></mrow></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\mu(n)=\begin{cases}
+1, &amp; \text{if $ n=1 $}\\
+0, &amp; \text{if $n$ is square free number}\\
+(-1)^{\text{质因数个数}}&amp; \text{otherwise}
+\end{cases}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:2.41em;"></span><span class="strut bottom" style="height:4.32em;vertical-align:-1.9099999999999997em;"></span><span class="base"><span class="mord mathit">μ</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.35002em;"><span style="top:-2.19999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.19999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.1500100000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.30001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.60002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.8500199999999998em;"></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.41em;"><span style="top:-4.41em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">1</span><span class="mpunct">,</span></span></span><span style="top:-2.97em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span></span></span><span style="top:-1.5300000000000002em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mopen">(</span><span class="mord">−</span><span class="mord">1</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">质因数个数</span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.9099999999999997em;"></span></span></span></span><span class="arraycolsep" style="width:1em;"></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.41em;"><span style="top:-4.41em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">if </span><span class="mord mathit">n</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span><span style="top:-2.97em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">if </span><span class="mord mathit">n</span><span class="mord"> is square free number</span></span></span></span><span style="top:-1.5300000000000002em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord">otherwise</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.9099999999999997em;"></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>用筛法求也很简单：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(!mindiv[i])&#123;</span><br><span class="line">			mindiv[i]=pris[++cnt]=i;</span><br><span class="line">			miu[i]=<span class="number">-1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>,k;j&lt;=cnt&amp;&amp;(k=i*pris[j])&lt;=n;j++)&#123;</span><br><span class="line">			mindiv[k]=pris[j];</span><br><span class="line">			<span class="keyword">if</span>(i%pris[j]==<span class="number">0</span>)&#123;</span><br><span class="line">				miu[k]=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			miu[k]=-miu[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h4><p>由求逆元的欧拉定理方法易知乘法逆元也是积性的，而且有一个很优美的性质：它是完全积性的。</p>
+<h4 id="乘法逆元"><a class="markdownIt-Anchor" href="#乘法逆元"></a> 乘法逆元</h4>
+<p>由求逆元的欧拉定理方法易知乘法逆元也是积性的，而且有一个很优美的性质：它是完全积性的。</p>
 <p>所以求它变得很简单：</p>
-<script type="math/tex; mode=display">inv[p]=p^{phi(n)-1}\mod n</script><script type="math/tex; mode=display">inv[k]=inv[i]*inv[pris[j]] \quad\text{if } gcd(k,n)=1</script><p>然而乘法逆元有一个递推的方法，更加简单：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>p</mi><mo>]</mo><mo>=</mo><msup><mi>p</mi><mrow><mi>p</mi><mi>h</mi><mi>i</mi><mo>(</mo><mi>n</mi><mo>)</mo><mo>−</mo><mn>1</mn></mrow></msup><mo><mo>mod</mo><mspace width="0.333333em"></mspace><mi>n</mi></mo></mrow><annotation encoding="application/x-tex">inv[p]=p^{phi(n)-1}\mod n
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.938em;"></span><span class="strut bottom" style="height:1.188em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit">p</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord mathit">p</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight">p</span><span class="mord mathit mtight">h</span><span class="mord mathit mtight">i</span><span class="mopen mtight">(</span><span class="mord mathit mtight">n</span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace quad"></span>mod<span class="mspace sixmuspace"></span><span class="mord mathit">n</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>k</mi><mo>]</mo><mo>=</mo><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>i</mi><mo>]</mo><mo>∗</mo><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>p</mi><mi>r</mi><mi>i</mi><mi>s</mi><mo>[</mo><mi>j</mi><mo>]</mo><mo>]</mo><mspace width="1em"></mspace><mtext>if </mtext><mi>g</mi><mi>c</mi><mi>d</mi><mo>(</mo><mi>k</mi><mo separator="true">,</mo><mi>n</mi><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">inv[k]=inv[i]*inv[pris[j]] \quad\text{if } gcd(k,n)=1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit">p</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit">i</span><span class="mord mathit">s</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.05724em;">j</span><span class="mclose">]</span><span class="mclose">]</span><span class="mspace quad"></span><span class="mord text"><span class="mord">if </span></span><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="mord mathit">c</span><span class="mord mathit">d</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span></span></p>
+<p>然而乘法逆元有一个递推的方法，更加简单：</p>
 <p>首先逆元满足以下等式（定义）：</p>
-<script type="math/tex; mode=display">inv[P\text{ mod }i]*(P\text{ mod }i)=1</script><p>将P % i展开：</p>
-<script type="math/tex; mode=display">inv[P\text{ mod }i]*(P-\lfloor P/i \rfloor *i)=1</script><p>进一步展开：</p>
-<script type="math/tex; mode=display">inv[P\text{ mod }i]*i*(-\lfloor P/i \rfloor)=1</script><p>会发现一个神奇的等式：</p>
-<script type="math/tex; mode=display">i*(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])=1</script><p>此时 $(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])$ 就是 $i$ 的逆元！</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>线性欧拉筛法简洁，积性函数性质优美，充分结合才能发挥更大的效果。同时又要注意到不同函数的性质，用筛法求积性函数的本质是根据积性函数的定义和运算式，利用筛法的特点，构造合适的转移方法。</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>P</mi><mtext> mod </mtext><mi>i</mi><mo>]</mo><mo>∗</mo><mo>(</mo><mi>P</mi><mtext> mod </mtext><mi>i</mi><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">inv[P\text{ mod }i]*(P\text{ mod }i)=1 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord text"><span class="mord"> mod </span></span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord text"><span class="mord"> mod </span></span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span></span></p>
+<p>将P % i展开：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>P</mi><mtext> mod </mtext><mi>i</mi><mo>]</mo><mo>∗</mo><mo>(</mo><mi>P</mi><mo>−</mo><mo>⌊</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>i</mi><mo>⌋</mo><mo>∗</mo><mi>i</mi><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">inv[P\text{ mod }i]*(P-\lfloor P/i \rfloor *i)=1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord text"><span class="mord"> mod </span></span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">⌊</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord">/</span><span class="mord mathit">i</span><span class="mclose">⌋</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord mathit">i</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span></span></p>
+<p>进一步展开：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>P</mi><mtext> mod </mtext><mi>i</mi><mo>]</mo><mo>∗</mo><mi>i</mi><mo>∗</mo><mo>(</mo><mo>−</mo><mo>⌊</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>i</mi><mo>⌋</mo><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">inv[P\text{ mod }i]*i*(-\lfloor P/i \rfloor)=1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord text"><span class="mord"> mod </span></span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mord mathit">i</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mopen">⌊</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord">/</span><span class="mord mathit">i</span><span class="mclose">⌋</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span></span></p>
+<p>会发现一个神奇的等式：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>∗</mo><mo>(</mo><mo>−</mo><mo>⌊</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>i</mi><mo>⌋</mo><mo>)</mo><mo>∗</mo><mo>(</mo><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>P</mi><mtext> mod </mtext><mi>i</mi><mo>]</mo><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i*(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])=1
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mord mathit">i</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mopen">⌊</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord">/</span><span class="mord mathit">i</span><span class="mclose">⌋</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord text"><span class="mord"> mod </span></span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord">1</span></span></span></span></span></p>
+<p>此时 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mo>−</mo><mo>⌊</mo><mi>P</mi><mi mathvariant="normal">/</mi><mi>i</mi><mo>⌋</mo><mo>)</mo><mo>∗</mo><mo>(</mo><mi>i</mi><mi>n</mi><mi>v</mi><mo>[</mo><mi>P</mi><mtext> mod </mtext><mi>i</mi><mo>]</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">(-\lfloor P/i \rfloor)*(inv[P\text{ mod }i])</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base"><span class="mopen">(</span><span class="mord">−</span><span class="mopen">⌊</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord">/</span><span class="mord mathit">i</span><span class="mclose">⌋</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mord rule" style="margin-right:0.2222222222222222em;"></span><span class="mopen">(</span><span class="mord mathit">i</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mopen">[</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mord text"><span class="mord"> mod </span></span><span class="mord mathit">i</span><span class="mclose">]</span><span class="mclose">)</span></span></span></span> 就是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.65952em;"></span><span class="strut bottom" style="height:0.65952em;vertical-align:0em;"></span><span class="base"><span class="mord mathit">i</span></span></span></span> 的逆元！</p>
+<h3 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h3>
+<p>线性欧拉筛法简洁，积性函数性质优美，充分结合才能发挥更大的效果。同时又要注意到不同函数的性质，用筛法求积性函数的本质是根据积性函数的定义和运算式，利用筛法的特点，构造合适的转移方法。</p>
 
       
     </div>
+
+    
+
     
     
     
@@ -563,40 +678,23 @@ e(n)=\begin{cases}
       <div>
         <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>本文作者：</strong>
-    Stardust D.L.
-  </li>
+    <strong>本文作者： </strong>Stardust D.L.</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     <a href="http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/" title="线性筛法及扩展">http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
-  </li>
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
 </ul>
 
       </div>
     
 
-    
-    
-    
-    <div>
-      
-        <div>
-    
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束，感谢您的阅读-------------</div>
-    
-</div>
-      
-    </div>
-
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/Blog/tags/CS/" rel="tag"><i class="fa fa-tag"></i> CS</a>
+            <a href="/Blog/tags/CS/" rel="tag"># CS</a>
           
         </div>
       
@@ -637,17 +735,10 @@ e(n)=\begin{cases}
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
-          
-
-
           
 
   
@@ -691,7 +782,7 @@ e(n)=\begin{cases}
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="http://osyor26xu.bkt.clouddn.com/head.png"
+                src="/Blog/images/avatar.png"
                 alt="Stardust D.L." />
             
               <p class="site-author-name" itemprop="name">Stardust D.L.</p>
@@ -705,7 +796,7 @@ e(n)=\begin{cases}
                 
                   <a href="/Blog/archives/">
                 
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -716,7 +807,19 @@ e(n)=\begin{cases}
                 
                 <div class="site-state-item site-state-categories">
                   <a href="/Blog/categories/index.html">
-                    <span class="site-state-item-count">4</span>
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -727,6 +830,16 @@ e(n)=\begin{cases}
                 
                 <div class="site-state-item site-state-tags">
                   <a href="/Blog/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
                     <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
@@ -736,41 +849,35 @@ e(n)=\begin{cases}
           
 
           
-            <div class="feed-link motion-element">
-              <a href="/Blog/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/StardustDL" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:stardustdl@163.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://plus.google.com/110214503730448545002" target="_blank" title="Google">
-                      
-                        <i class="fa fa-fw fa-google"></i>Google</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://vijos.org/d/StarOI/" target="_blank" title="OJ">
-                      
-                        <i class="fa fa-fw fa-code"></i>OJ</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/StardustDL" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:stardustdl@163.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/110214503730448545002" target="_blank" title="Google" rel="external nofollow"><i class="fa fa-fw fa-google"></i>Google</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://vijos.org/d/StarOI/" target="_blank" title="OJ" rel="external nofollow"><i class="fa fa-fw fa-code"></i>OJ</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://stardustdl.github.io/ProblemSolving/" target="_blank" title="Problems" rel="external nofollow"><i class="fa fa-fw fa-bookmark"></i>Problems</a>
+                  
+                </span>
+              
             </div>
           
 
@@ -790,10 +897,25 @@ e(n)=\begin{cases}
                     <a href="https://fancypei.github.io/" title="Fancy" target="_blank">Fancy</a>
                   </li>
                 
+                  <li class="links-of-blogroll-item">
+                    <a href="https://zhengzangw.github.io/" title="Fermat" target="_blank">Fermat</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://ricky-ting.github.io/" title="Ricky Ting" target="_blank">Ricky Ting</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://doowzs.com/" title="Doowzs" target="_blank">Doowzs</a>
+                  </li>
+                
               </ul>
             </div>
           
 
+          
+            
+          
           
 
         </div>
@@ -809,7 +931,7 @@ e(n)=\begin{cases}
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#标准筛法"><span class="nav-number">1.</span> <span class="nav-text">标准筛法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展：求积性函数"><span class="nav-number">2.</span> <span class="nav-text">扩展：求积性函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#id函数"><span class="nav-number">2.1.</span> <span class="nav-text">id函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#e函数"><span class="nav-number">2.2.</span> <span class="nav-text">e函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#phi函数"><span class="nav-number">2.3.</span> <span class="nav-text">phi函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最小质因数的指数"><span class="nav-number">2.4.</span> <span class="nav-text">最小质因数的指数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约数个数"><span class="nav-number">2.5.</span> <span class="nav-text">约数个数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约数和"><span class="nav-number">2.6.</span> <span class="nav-text">约数和</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#miu函数"><span class="nav-number">3.</span> <span class="nav-text">miu函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#乘法逆元"><span class="nav-number">3.1.</span> <span class="nav-text">乘法逆元</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#标准筛法"><span class="nav-number">1.</span> <span class="nav-text"> 标准筛法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展求积性函数"><span class="nav-number">2.</span> <span class="nav-text"> 扩展：求积性函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#id函数"><span class="nav-number">2.1.</span> <span class="nav-text"> id函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#e函数"><span class="nav-number">2.2.</span> <span class="nav-text"> e函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#phi函数"><span class="nav-number">2.3.</span> <span class="nav-text"> phi函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最小质因数的指数"><span class="nav-number">2.4.</span> <span class="nav-text"> 最小质因数的指数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约数个数"><span class="nav-number">2.5.</span> <span class="nav-text"> 约数个数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#约数和"><span class="nav-number">2.6.</span> <span class="nav-text"> 约数和</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#miu函数"><span class="nav-number">3.</span> <span class="nav-text"> miu函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#乘法逆元"><span class="nav-number">3.1.</span> <span class="nav-text"> 乘法逆元</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text"> 总结</span></a></li></ol></div>
             
 
           </div>
@@ -829,10 +951,9 @@ e(n)=\begin{cases}
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Stardust D.L.</span>
 
@@ -841,14 +962,9 @@ e(n)=\begin{cases}
   
 </div>
 
-<div class="powered-by">
-<span id="busuanzi_container_site_pv">
-    总访问量:<span id="busuanzi_value_site_pv"></span> |
-</span>
-<span id="busuanzi_container_site_uv">
-  访客数:<span id="busuanzi_value_site_uv"></span>
-</span>
-</div>
+
+  
+
 
 
 
@@ -859,6 +975,25 @@ e(n)=\begin{cases}
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
 
 
 
@@ -880,11 +1015,22 @@ e(n)=\begin{cases}
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
     
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+	
+    
 
+    
   </div>
 
   
@@ -924,6 +1070,8 @@ e(n)=\begin{cases}
 
 
 
+  
+
 
 
   
@@ -933,12 +1081,12 @@ e(n)=\begin{cases}
 
   
   
-    <script type="text/javascript" src="/Blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ftlabs/fastclick@1.0.6/lib/fastclick.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/Blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
   
 
   
@@ -956,50 +1104,41 @@ e(n)=\begin{cases}
     <script type="text/javascript" src="/Blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
-
-  
-
-
-  <script type="text/javascript" src="/Blog/js/src/utils.js?v=6.0.0"></script>
-
-  <script type="text/javascript" src="/Blog/js/src/motion.js?v=6.0.0"></script>
-
-
-
   
   
-
-
-  <script type="text/javascript" src="/Blog/js/src/affix.js?v=6.0.0"></script>
-
-  <script type="text/javascript" src="/Blog/js/src/schemes/pisces.js?v=6.0.0"></script>
-
-
-
-  
-  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=6.0.0"></script>
-<script type="text/javascript" src="/Blog/js/src/post-details.js?v=6.0.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/Blog/js/src/bootstrap.js?v=6.0.0"></script>
-
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/Blog/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/Blog/js/src/motion.js?v=6.4.0"></script>
 
 
-	
+
+  
+  
 
 
+  <script type="text/javascript" src="/Blog/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/Blog/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/Blog/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/Blog/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/Blog/js/src/bootstrap.js?v=6.4.0"></script>
 
 
 
@@ -1007,11 +1146,7 @@ e(n)=\begin{cases}
 
 
 
-
-
   
-
-
 
 
 
@@ -1021,24 +1156,29 @@ e(n)=\begin{cases}
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.3.0/dist/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
         verify: false,
         notify: false,
-        appId: '10IvSev51UrJMC2OQy4UVGw7-gzGzoHsz',
-        appKey: 'sFpaWMyoQpCCKevHFY7P877L',
-        placeholder: '',
+        appId: 'GEoFDDzebNArtzV75NoUMUG2-gzGzoHsz',
+        appKey: 'OKjw114YrnQfpTFiUHSJXwKJ',
+        placeholder: 'Just go go',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: false
     });
   </script>
 
@@ -1095,6 +1235,8 @@ e(n)=\begin{cases}
         .css('overflow', 'hidden');
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
+      
+
       $.ajax({
         url: path,
         dataType: isXml ? "xml" : "json",
@@ -1128,6 +1270,7 @@ e(n)=\begin{cases}
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
                 var indexOfTitle = [];
@@ -1370,113 +1513,6 @@ e(n)=\begin{cases}
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("10IvSev51UrJMC2OQy4UVGw7-gzGzoHsz", "sFpaWMyoQpCCKevHFY7P877L");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
 
   
 <script>
@@ -1500,29 +1536,57 @@ e(n)=\begin{cases}
 
   
   
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" type="text/css">
+
+   
   
 
 
   
+  
+  
+  <script src="/Blog/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('manual', "#更多");
+  
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
 
   
 

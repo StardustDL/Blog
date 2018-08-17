@@ -1,2 +1,2 @@
+http://stardustdl.github.io/Blog/2018/03/12/算法正确性证明/
 http://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-日程管理/
-http://stardustdl.github.io/Blog/2018/01/03/HackerRank-HourRank-25/
