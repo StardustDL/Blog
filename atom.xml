@@ -5,9 +5,9 @@
   
   <link href="/Blog/atom.xml" rel="self"/>
   
-  <link href="http://stardustdl.github.io/Blog/"/>
+  <link href="https://stardustdl.github.io/Blog/"/>
   <updated>2018-08-17T08:29:46.682Z</updated>
-  <id>http://stardustdl.github.io/Blog/</id>
+  <id>https://stardustdl.github.io/Blog/</id>
   
   <author>
     <name>Stardust D.L.</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>算法正确性证明</title>
-    <link href="http://stardustdl.github.io/Blog/2018/03/12/%E7%AE%97%E6%B3%95%E6%AD%A3%E7%A1%AE%E6%80%A7%E8%AF%81%E6%98%8E/"/>
-    <id>http://stardustdl.github.io/Blog/2018/03/12/算法正确性证明/</id>
+    <link href="https://stardustdl.github.io/Blog/2018/03/12/%E7%AE%97%E6%B3%95%E6%AD%A3%E7%A1%AE%E6%80%A7%E8%AF%81%E6%98%8E/"/>
+    <id>https://stardustdl.github.io/Blog/2018/03/12/算法正确性证明/</id>
     <published>2018-03-12T06:15:56.000Z</published>
     <updated>2018-08-17T08:29:46.682Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="Note" scheme="http://stardustdl.github.io/Blog/categories/Note/"/>
+      <category term="Note" scheme="https://stardustdl.github.io/Blog/categories/Note/"/>
     
     
-      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+      <category term="CS" scheme="https://stardustdl.github.io/Blog/tags/CS/"/>
     
   </entry>
   
   <entry>
     <title>DailyCheckin 日程管理</title>
-    <link href="http://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86/"/>
-    <id>http://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-日程管理/</id>
+    <link href="https://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-%E6%97%A5%E7%A8%8B%E7%AE%A1%E7%90%86/"/>
+    <id>https://stardustdl.github.io/Blog/2018/02/05/DailyCheckin-日程管理/</id>
     <published>2018-02-05T09:42:05.000Z</published>
     <updated>2018-08-17T08:29:22.827Z</updated>
     
@@ -60,17 +60,17 @@
     
     </summary>
     
-      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+      <category term="Designs" scheme="https://stardustdl.github.io/Blog/categories/Designs/"/>
     
     
-      <category term="Apps" scheme="http://stardustdl.github.io/Blog/tags/Apps/"/>
+      <category term="Apps" scheme="https://stardustdl.github.io/Blog/tags/Apps/"/>
     
   </entry>
   
   <entry>
     <title>HackerRank HourRank 25</title>
-    <link href="http://stardustdl.github.io/Blog/2018/01/03/HackerRank-HourRank-25/"/>
-    <id>http://stardustdl.github.io/Blog/2018/01/03/HackerRank-HourRank-25/</id>
+    <link href="https://stardustdl.github.io/Blog/2018/01/03/HackerRank-HourRank-25/"/>
+    <id>https://stardustdl.github.io/Blog/2018/01/03/HackerRank-HourRank-25/</id>
     <published>2018-01-03T05:50:56.000Z</published>
     <updated>2018-08-17T08:29:26.016Z</updated>
     
@@ -85,19 +85,19 @@
     
     </summary>
     
-      <category term="Contests" scheme="http://stardustdl.github.io/Blog/categories/Contests/"/>
+      <category term="Contests" scheme="https://stardustdl.github.io/Blog/categories/Contests/"/>
     
     
-      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+      <category term="CS" scheme="https://stardustdl.github.io/Blog/tags/CS/"/>
     
-      <category term="ACM" scheme="http://stardustdl.github.io/Blog/tags/ACM/"/>
+      <category term="ACM" scheme="https://stardustdl.github.io/Blog/tags/ACM/"/>
     
   </entry>
   
   <entry>
     <title>“玲珑杯” ACM比赛 Round 23</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/30/%E7%8E%B2%E7%8F%91%E6%9D%AF-r23/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/30/玲珑杯-r23/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/30/%E7%8E%B2%E7%8F%91%E6%9D%AF-r23/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/30/玲珑杯-r23/</id>
     <published>2017-12-30T07:16:10.000Z</published>
     <updated>2018-08-17T08:29:41.621Z</updated>
     
@@ -115,19 +115,19 @@
     
     </summary>
     
-      <category term="Contests" scheme="http://stardustdl.github.io/Blog/categories/Contests/"/>
+      <category term="Contests" scheme="https://stardustdl.github.io/Blog/categories/Contests/"/>
     
     
-      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+      <category term="CS" scheme="https://stardustdl.github.io/Blog/tags/CS/"/>
     
-      <category term="ACM" scheme="http://stardustdl.github.io/Blog/tags/ACM/"/>
+      <category term="ACM" scheme="https://stardustdl.github.io/Blog/tags/ACM/"/>
     
   </entry>
   
   <entry>
     <title>C程序设计语言</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/25/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/25/C程序设计语言/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/25/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/25/C程序设计语言/</id>
     <published>2017-12-25T11:26:43.000Z</published>
     <updated>2018-08-17T08:29:18.386Z</updated>
     
@@ -146,17 +146,17 @@
     
     </summary>
     
-      <category term="Readings" scheme="http://stardustdl.github.io/Blog/categories/Readings/"/>
+      <category term="Readings" scheme="https://stardustdl.github.io/Blog/categories/Readings/"/>
     
     
-      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+      <category term="CS" scheme="https://stardustdl.github.io/Blog/tags/CS/"/>
     
   </entry>
   
   <entry>
     <title>iExpr 反馈收集</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/25/iExpr-%E5%8F%8D%E9%A6%88%E6%94%B6%E9%9B%86/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/25/iExpr-反馈收集/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/25/iExpr-%E5%8F%8D%E9%A6%88%E6%94%B6%E9%9B%86/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/25/iExpr-反馈收集/</id>
     <published>2017-12-25T01:33:34.000Z</published>
     <updated>2018-08-17T08:29:32.049Z</updated>
     
@@ -172,15 +172,15 @@
     
     </summary>
     
-      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+      <category term="Designs" scheme="https://stardustdl.github.io/Blog/categories/Designs/"/>
     
     
   </entry>
   
   <entry>
     <title>牛顿迭代法</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/24/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/24/%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/24/牛顿迭代法/</id>
     <published>2017-12-24T12:35:05.000Z</published>
     <updated>2018-08-17T08:29:38.273Z</updated>
     
@@ -197,19 +197,19 @@
     
     </summary>
     
-      <category term="Studies" scheme="http://stardustdl.github.io/Blog/categories/Studies/"/>
+      <category term="Studies" scheme="https://stardustdl.github.io/Blog/categories/Studies/"/>
     
     
-      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+      <category term="CS" scheme="https://stardustdl.github.io/Blog/tags/CS/"/>
     
-      <category term="Math" scheme="http://stardustdl.github.io/Blog/tags/Math/"/>
+      <category term="Math" scheme="https://stardustdl.github.io/Blog/tags/Math/"/>
     
   </entry>
   
   <entry>
     <title>线性筛法及扩展</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/23/%E7%BA%BF%E6%80%A7%E7%AD%9B%E6%B3%95%E5%8F%8A%E6%89%A9%E5%B1%95/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/23/%E7%BA%BF%E6%80%A7%E7%AD%9B%E6%B3%95%E5%8F%8A%E6%89%A9%E5%B1%95/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/23/线性筛法及扩展/</id>
     <published>2017-12-23T12:32:06.000Z</published>
     <updated>2018-08-17T08:29:49.197Z</updated>
     
@@ -230,17 +230,17 @@
     
     </summary>
     
-      <category term="Studies" scheme="http://stardustdl.github.io/Blog/categories/Studies/"/>
+      <category term="Studies" scheme="https://stardustdl.github.io/Blog/categories/Studies/"/>
     
     
-      <category term="CS" scheme="http://stardustdl.github.io/Blog/tags/CS/"/>
+      <category term="CS" scheme="https://stardustdl.github.io/Blog/tags/CS/"/>
     
   </entry>
   
   <entry>
     <title>码题助手</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/22/%E7%A0%81%E9%A2%98%E5%8A%A9%E6%89%8B/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/22/码题助手/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/22/%E7%A0%81%E9%A2%98%E5%8A%A9%E6%89%8B/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/22/码题助手/</id>
     <published>2017-12-22T15:07:41.000Z</published>
     <updated>2018-08-17T08:29:44.205Z</updated>
     
@@ -258,17 +258,17 @@
     
     </summary>
     
-      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+      <category term="Designs" scheme="https://stardustdl.github.io/Blog/categories/Designs/"/>
     
     
-      <category term="Apps" scheme="http://stardustdl.github.io/Blog/tags/Apps/"/>
+      <category term="Apps" scheme="https://stardustdl.github.io/Blog/tags/Apps/"/>
     
   </entry>
   
   <entry>
     <title>iExpr 编程示例与常用运行时函数</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/22/iExpr-Examples/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/22/iExpr-Examples/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/22/iExpr-Examples/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/22/iExpr-Examples/</id>
     <published>2017-12-22T06:08:44.000Z</published>
     <updated>2018-08-17T08:29:29.879Z</updated>
     
@@ -283,15 +283,15 @@
     
     </summary>
     
-      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+      <category term="Designs" scheme="https://stardustdl.github.io/Blog/categories/Designs/"/>
     
     
   </entry>
   
   <entry>
     <title>iExpr 更新介绍</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/22/iExpr-%E6%9B%B4%E6%96%B0%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/22/iExpr-更新介绍/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/22/iExpr-%E6%9B%B4%E6%96%B0%E4%BB%8B%E7%BB%8D/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/22/iExpr-更新介绍/</id>
     <published>2017-12-22T06:06:25.000Z</published>
     <updated>2018-08-17T08:29:34.896Z</updated>
     
@@ -308,15 +308,15 @@
     
     </summary>
     
-      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+      <category term="Designs" scheme="https://stardustdl.github.io/Blog/categories/Designs/"/>
     
     
   </entry>
   
   <entry>
     <title>表达式计算器-iExpr</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/22/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%99%A8-iExpr/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/22/表达式计算器-iExpr/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/22/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%AE%A1%E7%AE%97%E5%99%A8-iExpr/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/22/表达式计算器-iExpr/</id>
     <published>2017-12-22T05:53:24.000Z</published>
     <updated>2018-08-17T08:29:52.587Z</updated>
     
@@ -332,17 +332,17 @@
     
     </summary>
     
-      <category term="Designs" scheme="http://stardustdl.github.io/Blog/categories/Designs/"/>
+      <category term="Designs" scheme="https://stardustdl.github.io/Blog/categories/Designs/"/>
     
     
-      <category term="Apps" scheme="http://stardustdl.github.io/Blog/tags/Apps/"/>
+      <category term="Apps" scheme="https://stardustdl.github.io/Blog/tags/Apps/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://stardustdl.github.io/Blog/2017/12/22/Hello-World1/"/>
-    <id>http://stardustdl.github.io/Blog/2017/12/22/Hello-World1/</id>
+    <link href="https://stardustdl.github.io/Blog/2017/12/22/Hello-World1/"/>
+    <id>https://stardustdl.github.io/Blog/2017/12/22/Hello-World1/</id>
     <published>2017-12-22T03:07:18.605Z</published>
     <updated>2017-12-22T09:44:25.164Z</updated>
     
