@@ -159,17 +159,18 @@
 
 
 
-  <meta name="description" content="快速幂123456789qpow=(a,n)=&amp;gt;func(    return=1,    while(n&amp;gt;=1,    [        if(n%2==1,return=return*a),        a=a*a,        n=floor(n/2)    ])) 函数极小值12345678910eps=0.000001,fmin=&amp;gt;(ex,x0)=&amp;gt;func(">
+  <meta name="description" content="快速幂 123456789qpow=(a,n)=&amp;gt;func(    return=1,    while(n&amp;gt;=1,    [        if(n%2==1,return=return*a),        a=a*a,        n=floor(n/2)    ]))  函数极小值 12345678910eps=0.000001,fmin=&amp;gt;(ex,x0)=&amp;gt;f">
+<meta name="keywords" content="Blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iExpr 编程示例与常用运行时函数">
 <meta property="og:url" content="https://stardustdl.github.io/Blog/2017/12/22/iExpr-Examples/index.html">
 <meta property="og:site_name" content="Liang&#39;s Blog">
-<meta property="og:description" content="快速幂123456789qpow=(a,n)=&amp;gt;func(    return=1,    while(n&amp;gt;=1,    [        if(n%2==1,return=return*a),        a=a*a,        n=floor(n/2)    ])) 函数极小值12345678910eps=0.000001,fmin=&amp;gt;(ex,x0)=&amp;gt;func(">
+<meta property="og:description" content="快速幂 123456789qpow=(a,n)=&amp;gt;func(    return=1,    while(n&amp;gt;=1,    [        if(n%2==1,return=return*a),        a=a*a,        n=floor(n/2)    ]))  函数极小值 12345678910eps=0.000001,fmin=&amp;gt;(ex,x0)=&amp;gt;f">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-08-17T08:29:29.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iExpr 编程示例与常用运行时函数">
-<meta name="twitter:description" content="快速幂123456789qpow=(a,n)=&amp;gt;func(    return=1,    while(n&amp;gt;=1,    [        if(n%2==1,return=return*a),        a=a*a,        n=floor(n/2)    ])) 函数极小值12345678910eps=0.000001,fmin=&amp;gt;(ex,x0)=&amp;gt;func(">
+<meta name="twitter:description" content="快速幂 123456789qpow=(a,n)=&amp;gt;func(    return=1,    while(n&amp;gt;=1,    [        if(n%2==1,return=return*a),        a=a*a,        n=floor(n/2)    ]))  函数极小值 12345678910eps=0.000001,fmin=&amp;gt;(ex,x0)=&amp;gt;f">
 
 
 
@@ -509,6 +510,34 @@
           
 
           
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">0:01</span>
+              
+            </div>
+          
 
           
 
@@ -525,14 +554,23 @@
       
 
       
-        <h1 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">qpow=(a,n)=&gt;func(</span><br><span class="line">    return=1,</span><br><span class="line">    while(n&gt;=1,</span><br><span class="line">    [</span><br><span class="line">        if(n%2==1,return=return*a),</span><br><span class="line">        a=a*a,</span><br><span class="line">        n=floor(n/2)</span><br><span class="line">    ])</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<h1 id="函数极小值"><a href="#函数极小值" class="headerlink" title="函数极小值"></a>函数极小值</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">eps=0.000001,</span><br><span class="line">fmin=&gt;(ex,x0)=&gt;func(</span><br><span class="line">    p:=diffi(ex,x0),</span><br><span class="line">    t:=0.3*p,</span><br><span class="line">    while(abs(t)&gt;=eps,[</span><br><span class="line">        x0=x0-t,</span><br><span class="line">        p=diffi(ex,x0),</span><br><span class="line">        t=0.3*p]),</span><br><span class="line">    return=x0</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<h1 id="笛卡尔积"><a href="#笛卡尔积" class="headerlink" title="笛卡尔积"></a>笛卡尔积</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dmul=(a,b)=&gt;func(</span><br><span class="line">    return=[],</span><br><span class="line">    foreach(a,x,</span><br><span class="line">        foreach(b,y,</span><br><span class="line">            return=cup(return,[tuple(x,y)]))))</span><br></pre></td></tr></table></figure>
-<h1 id="阶乘"><a href="#阶乘" class="headerlink" title="阶乘"></a>阶乘</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fac=(n)=&gt;func(</span><br><span class="line">    if(n&gt;0,</span><br><span class="line">        return=n*fac(n-1),</span><br><span class="line">        return=1)),</span><br></pre></td></tr></table></figure>
-<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">sort=(l)=&gt;func(</span><br><span class="line">    n:=l.len(),</span><br><span class="line">    for(i=0,i&lt;n,i=i+1,</span><br><span class="line">        for(j=i+1,j&lt;n,j=j+1,</span><br><span class="line">            if(val(l,i)&gt;val(l,j),</span><br><span class="line">                [t:=val(l,i),</span><br><span class="line">                val(l,i,val(l,j)),</span><br><span class="line">                val(l,j,t)]</span><br><span class="line">            )</span><br><span class="line">        )</span><br><span class="line">    ),</span><br><span class="line">    return=l</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<h2 id="以下函数已有预定义函数，此为近似实现"><a href="#以下函数已有预定义函数，此为近似实现" class="headerlink" title="以下函数已有预定义函数，此为近似实现"></a>以下函数已有预定义函数，此为近似实现</h2><h1 id="生成-1-2-…n"><a href="#生成-1-2-…n" class="headerlink" title="生成 [1,2,…n]"></a>生成 [1,2,…n]</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">range=(a,b)=&gt;func(</span><br><span class="line">    return=[],</span><br><span class="line">    for(i:=a,i&lt;=b,i=i+1,</span><br><span class="line">        return=cup(return,[i])))</span><br></pre></td></tr></table></figure>
-<h1 id="转换函数"><a href="#转换函数" class="headerlink" title="转换函数"></a>转换函数</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select=(l,f)=&gt;func(</span><br><span class="line">    n:=len(l),</span><br><span class="line">    return=array(n),</span><br><span class="line">    for(i:=0,i&lt;n,i=i+1,</span><br><span class="line">        val(return,i,f(val(l,i)))</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<h1 id="挑选函数"><a href="#挑选函数" class="headerlink" title="挑选函数"></a>挑选函数</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">where=(l,f)=&gt;func(</span><br><span class="line">    return=[],</span><br><span class="line">    foreach(l,x,</span><br><span class="line">        if(f(x),</span><br><span class="line">            return=return.cup([x])</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+        <h1 id="快速幂"><a class="markdownIt-Anchor" href="#快速幂"></a> 快速幂</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">qpow=(a,n)=&gt;func(</span><br><span class="line">    return=1,</span><br><span class="line">    while(n&gt;=1,</span><br><span class="line">    [</span><br><span class="line">        if(n%2==1,return=return*a),</span><br><span class="line">        a=a*a,</span><br><span class="line">        n=floor(n/2)</span><br><span class="line">    ])</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h1 id="函数极小值"><a class="markdownIt-Anchor" href="#函数极小值"></a> 函数极小值</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">eps=0.000001,</span><br><span class="line">fmin=&gt;(ex,x0)=&gt;func(</span><br><span class="line">    p:=diffi(ex,x0),</span><br><span class="line">    t:=0.3*p,</span><br><span class="line">    while(abs(t)&gt;=eps,[</span><br><span class="line">        x0=x0-t,</span><br><span class="line">        p=diffi(ex,x0),</span><br><span class="line">        t=0.3*p]),</span><br><span class="line">    return=x0</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h1 id="笛卡尔积"><a class="markdownIt-Anchor" href="#笛卡尔积"></a> 笛卡尔积</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dmul=(a,b)=&gt;func(</span><br><span class="line">    return=[],</span><br><span class="line">    foreach(a,x,</span><br><span class="line">        foreach(b,y,</span><br><span class="line">            return=cup(return,[tuple(x,y)]))))</span><br></pre></td></tr></table></figure>
+<h1 id="阶乘"><a class="markdownIt-Anchor" href="#阶乘"></a> 阶乘</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fac=(n)=&gt;func(</span><br><span class="line">    if(n&gt;0,</span><br><span class="line">        return=n*fac(n-1),</span><br><span class="line">        return=1)),</span><br></pre></td></tr></table></figure>
+<h1 id="冒泡排序"><a class="markdownIt-Anchor" href="#冒泡排序"></a> 冒泡排序</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">sort=(l)=&gt;func(</span><br><span class="line">    n:=l.len(),</span><br><span class="line">    for(i=0,i&lt;n,i=i+1,</span><br><span class="line">        for(j=i+1,j&lt;n,j=j+1,</span><br><span class="line">            if(val(l,i)&gt;val(l,j),</span><br><span class="line">                [t:=val(l,i),</span><br><span class="line">                val(l,i,val(l,j)),</span><br><span class="line">                val(l,j,t)]</span><br><span class="line">            )</span><br><span class="line">        )</span><br><span class="line">    ),</span><br><span class="line">    return=l</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h2 id="以下函数已有预定义函数此为近似实现"><a class="markdownIt-Anchor" href="#以下函数已有预定义函数此为近似实现"></a> 以下函数已有预定义函数，此为近似实现</h2>
+<h1 id="生成-12n"><a class="markdownIt-Anchor" href="#生成-12n"></a> 生成 [1,2,…n]</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">range=(a,b)=&gt;func(</span><br><span class="line">    return=[],</span><br><span class="line">    for(i:=a,i&lt;=b,i=i+1,</span><br><span class="line">        return=cup(return,[i])))</span><br></pre></td></tr></table></figure>
+<h1 id="转换函数"><a class="markdownIt-Anchor" href="#转换函数"></a> 转换函数</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select=(l,f)=&gt;func(</span><br><span class="line">    n:=len(l),</span><br><span class="line">    return=array(n),</span><br><span class="line">    for(i:=0,i&lt;n,i=i+1,</span><br><span class="line">        val(return,i,f(val(l,i)))</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h1 id="挑选函数"><a class="markdownIt-Anchor" href="#挑选函数"></a> 挑选函数</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">where=(l,f)=&gt;func(</span><br><span class="line">    return=[],</span><br><span class="line">    foreach(l,x,</span><br><span class="line">        if(f(x),</span><br><span class="line">            return=return.cup([x])</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -662,7 +700,7 @@
                 
                   <a href="/Blog/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -683,9 +721,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -797,7 +833,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速幂"><span class="nav-number">1.</span> <span class="nav-text">快速幂</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数极小值"><span class="nav-number">2.</span> <span class="nav-text">函数极小值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#笛卡尔积"><span class="nav-number">3.</span> <span class="nav-text">笛卡尔积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阶乘"><span class="nav-number">4.</span> <span class="nav-text">阶乘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#冒泡排序"><span class="nav-number">5.</span> <span class="nav-text">冒泡排序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#以下函数已有预定义函数，此为近似实现"><span class="nav-number">5.1.</span> <span class="nav-text">以下函数已有预定义函数，此为近似实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成-1-2-…n"><span class="nav-number">6.</span> <span class="nav-text">生成 [1,2,…n]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#转换函数"><span class="nav-number">7.</span> <span class="nav-text">转换函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#挑选函数"><span class="nav-number">8.</span> <span class="nav-text">挑选函数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#快速幂"><span class="nav-number">1.</span> <span class="nav-text"> 快速幂</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数极小值"><span class="nav-number">2.</span> <span class="nav-text"> 函数极小值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#笛卡尔积"><span class="nav-number">3.</span> <span class="nav-text"> 笛卡尔积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阶乘"><span class="nav-number">4.</span> <span class="nav-text"> 阶乘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#冒泡排序"><span class="nav-number">5.</span> <span class="nav-text"> 冒泡排序</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#以下函数已有预定义函数此为近似实现"><span class="nav-number">5.1.</span> <span class="nav-text"> 以下函数已有预定义函数，此为近似实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成-12n"><span class="nav-number">6.</span> <span class="nav-text"> 生成 [1,2,…n]</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#转换函数"><span class="nav-number">7.</span> <span class="nav-text"> 转换函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#挑选函数"><span class="nav-number">8.</span> <span class="nav-text"> 挑选函数</span></a></li></ol></div>
             
 
           </div>
@@ -824,7 +860,25 @@
   <span class="author" itemprop="copyrightHolder">Stardust D.L.</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">26k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">0:24</span>
   
 </div>
 
