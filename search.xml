@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Problem Solving 博客]]></title>
+    <url>%2FBlog%2F2018%2F10%2F26%2Fblog-ps-move%2F</url>
+    <content type="text"><![CDATA[大部分知识类文章移至 Liang’s Problem Solving Blog。 更多链接见博客跳转页。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[算法正确性证明]]></title>
     <url>%2FBlog%2F2018%2F03%2F12%2F%E7%AE%97%E6%B3%95%E6%AD%A3%E7%A1%AE%E6%80%A7%E8%AF%81%E6%98%8E%2F</url>
     <content type="text"><![CDATA[例子 抽象例子 12345678910Procedure ALG #P Init #I while C #I and C S #I and not C Follow #Q 目标：P{ALG}QP\{ALG\}QP{ALG}Q 途径： P{Init}IP\{Init\}IP{Init}I (I∧C){S}I(I\wedge C)\{S\}I(I∧C){S}I (I∧¬C){Follow}Q(I\wedge \neg C)\{Follow\}Q(I∧¬C){Follow}Q 注意 循环不变量不唯一但强度不同 实际例子 12345678910111213141516171819equal(S1,S2) #P X=S1 Y=S2 E=true #I while X!=null &amp;&amp; Y!=null &amp;&amp; E if eq(head(X),head(Y)) X=tail(X) Y=tail(Y) else E=false #A if !(X==null &amp;&amp; Y==null) E=false #B else #C return E 不变量 P:(S1isstring)∧(S2isstring)P: (S_1 is string)\wedge(S_2 is string)P:(S1​isstring)∧(S2​isstring) I:S1=S2⇔E∧X=YI: S_1=S_2 \Leftrightarrow E\wedge X=YI:S1​=S2​⇔E∧X=Y A:I∧(X==null∨Y==null∨¬E)A: I\wedge (X==null \vee Y==null \vee \neg E)A:I∧(X==null∨Y==null∨¬E) B:A∧¬(X==null∧Y==null)B: A\wedge \neg (X==null \wedge Y==null)B:A∧¬(X==null∧Y==null) C:A∧X==null∧Y==nullC: A\wedge X==null \wedge Y==nullC:A∧X==null∧Y==null Q:S1=S2⇔EQ: S_1=S_2 \Leftrightarrow EQ:S1​=S2​⇔E 证明内容 P⇒I1P \Rightarrow I_1P⇒I1​ I1⇒I1I_1 \Rightarrow I_1I1​⇒I1​ I1⇒I2I_1 \Rightarrow I_2I1​⇒I2​ I2⇒I3I_2 \Rightarrow I_3I2​⇒I3​ I2⇒I4I_2 \Rightarrow I_4I2​⇒I4​ (I3⇒Q)∧(I4⇒Q)(I_3 \Rightarrow Q) \wedge (I_4 \Rightarrow Q)(I3​⇒Q)∧(I4​⇒Q)]]></content>

@@ -6,7 +6,7 @@
   <link href="/Blog/atom.xml" rel="self"/>
   
   <link href="https://stardustdl.github.io/Blog/"/>
-  <updated>2018-08-17T08:29:46.682Z</updated>
+  <updated>2018-10-26T05:08:10.629Z</updated>
   <id>https://stardustdl.github.io/Blog/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Problem Solving 博客</title>
+    <link href="https://stardustdl.github.io/Blog/2018/10/26/blog-ps-move/"/>
+    <id>https://stardustdl.github.io/Blog/2018/10/26/blog-ps-move/</id>
+    <published>2018-10-26T05:06:32.000Z</published>
+    <updated>2018-10-26T05:08:10.629Z</updated>
+    
+    <content type="html"><![CDATA[<p>大部分知识类文章移至 <a href="https://stardustdl.github.io/ProblemSolving/">Liang’s Problem Solving Blog</a>。</p><p>更多链接见<a href="https://stardustdl.github.io/">博客跳转页</a>。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;大部分知识类文章移至 &lt;a href=&quot;https://stardustdl.github.io/ProblemSolving/&quot;&gt;Liang’s Problem Solving Blog&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;更多链接见&lt;a href=&quot;https://stardust
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>算法正确性证明</title>
